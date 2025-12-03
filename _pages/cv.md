@@ -7,14 +7,12 @@ redirect_from:
   - /resume
 ---
 
-{% include base_path %}
+<!-- {% include base_path %} -->
 
 Education
 ======
 * **M.S.E. in Data Science**, University of Pennsylvania, 2024 – 2025
-  * Summa Cum Laude
 * **B.S.E. in Networked and Social Systems**, University of Pennsylvania, 2020 – 2024
-  * Summa Cum Laude
   * Minors: Mathematics, Engineering Entrepreneurship
 
 Awards
@@ -32,7 +30,7 @@ Publications
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Talks
+<!-- Talks
 ======
   <ul>{% for post in site.talks reversed %}
     {% include archive-single-talk-cv.html  %}
@@ -46,4 +44,4 @@ Teaching
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Currently signed in to 43 different slack teams -->
