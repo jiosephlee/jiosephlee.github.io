@@ -127,6 +127,9 @@
     "query_idx00009": [
       "level_01"
     ],
+    "query_idx00010": [
+      "level_01"
+    ],
     "query_idx00011": [
       "level_01"
     ],
@@ -223,6 +226,9 @@
     "query_idx00044": [
       "level_01"
     ],
+    "query_idx00045": [
+      "level_01"
+    ],
     "query_idx00046": [
       "level_01"
     ],
@@ -242,6 +248,9 @@
       "level_01"
     ],
     "query_idx00052": [
+      "level_01"
+    ],
+    "query_idx00053": [
       "level_01"
     ],
     "query_idx00054": [
@@ -373,6 +382,9 @@
     "query_idx00100": [
       "level_01"
     ],
+    "query_idx00101": [
+      "level_01"
+    ],
     "query_idx00103": [
       "level_01"
     ],
@@ -490,6 +502,9 @@
     "query_idx00152": [
       "level_01"
     ],
+    "query_idx00153": [
+      "level_01"
+    ],
     "query_idx00154": [
       "level_01"
     ],
@@ -517,16 +532,31 @@
     "query_idx00163": [
       "level_01"
     ],
+    "query_idx00165": [
+      "level_01"
+    ],
     "query_idx00166": [
       "level_01"
     ],
     "query_idx00167": [
       "level_01"
     ],
+    "query_idx00170": [
+      "level_01"
+    ],
+    "query_idx00171": [
+      "level_01"
+    ],
     "query_idx00173": [
       "level_01"
     ],
+    "query_idx00174": [
+      "level_01"
+    ],
     "query_idx00175": [
+      "level_01"
+    ],
+    "query_idx00176": [
       "level_01"
     ],
     "query_idx00177": [
@@ -565,7 +595,16 @@
     "query_idx00193": [
       "level_01"
     ],
+    "query_idx00196": [
+      "level_01"
+    ],
+    "query_idx00198": [
+      "level_01"
+    ],
     "query_idx00199": [
+      "level_01"
+    ],
+    "query_idx00200": [
       "level_01"
     ],
     "query_idx00202": [
@@ -578,6 +617,9 @@
       "level_01"
     ],
     "query_idx00205": [
+      "level_01"
+    ],
+    "query_idx00207": [
       "level_01"
     ],
     "query_idx00208": [
@@ -595,10 +637,25 @@
     "query_idx00214": [
       "level_01"
     ],
+    "query_idx00216": [
+      "level_01"
+    ],
+    "query_idx00217": [
+      "level_01"
+    ],
     "query_idx00218": [
       "level_01"
     ],
     "query_idx00220": [
+      "level_01"
+    ],
+    "query_idx00224": [
+      "level_01"
+    ],
+    "query_idx00225": [
+      "level_01"
+    ],
+    "query_idx00226": [
       "level_01"
     ],
     "query_idx00227": [
@@ -607,7 +664,16 @@
     "query_idx00229": [
       "level_01"
     ],
+    "query_idx00230": [
+      "level_01"
+    ],
+    "query_idx00233": [
+      "level_01"
+    ],
     "query_idx00234": [
+      "level_01"
+    ],
+    "query_idx00238": [
       "level_01"
     ],
     "query_idx00240": [
@@ -617,6 +683,30 @@
       "level_01"
     ],
     "query_idx00246": [
+      "level_01"
+    ],
+    "query_idx00249": [
+      "level_01"
+    ],
+    "query_idx00255": [
+      "level_01"
+    ],
+    "query_idx00262": [
+      "level_01"
+    ],
+    "query_idx00264": [
+      "level_01"
+    ],
+    "query_idx00270": [
+      "level_01"
+    ],
+    "query_idx00273": [
+      "level_01"
+    ],
+    "query_idx00286": [
+      "level_01"
+    ],
+    "query_idx00301": [
       "level_01"
     ]
   }
