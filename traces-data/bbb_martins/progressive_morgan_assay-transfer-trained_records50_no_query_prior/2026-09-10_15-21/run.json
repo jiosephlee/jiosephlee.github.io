@@ -208,6 +208,9 @@
     "query_idx00037": [
       "level_01"
     ],
+    "query_idx00038": [
+      "level_01"
+    ],
     "query_idx00039": [
       "level_01"
     ],
@@ -472,6 +475,12 @@
     "query_idx00135": [
       "level_01"
     ],
+    "query_idx00137": [
+      "level_01"
+    ],
+    "query_idx00138": [
+      "level_01"
+    ],
     "query_idx00139": [
       "level_01"
     ],
@@ -485,6 +494,9 @@
       "level_01"
     ],
     "query_idx00145": [
+      "level_01"
+    ],
+    "query_idx00146": [
       "level_01"
     ],
     "query_idx00147": [
@@ -595,6 +607,9 @@
     "query_idx00193": [
       "level_01"
     ],
+    "query_idx00195": [
+      "level_01"
+    ],
     "query_idx00196": [
       "level_01"
     ],
@@ -605,6 +620,9 @@
       "level_01"
     ],
     "query_idx00200": [
+      "level_01"
+    ],
+    "query_idx00201": [
       "level_01"
     ],
     "query_idx00202": [
@@ -619,6 +637,9 @@
     "query_idx00205": [
       "level_01"
     ],
+    "query_idx00206": [
+      "level_01"
+    ],
     "query_idx00207": [
       "level_01"
     ],
@@ -631,10 +652,16 @@
     "query_idx00210": [
       "level_01"
     ],
+    "query_idx00211": [
+      "level_01"
+    ],
     "query_idx00212": [
       "level_01"
     ],
     "query_idx00214": [
+      "level_01"
+    ],
+    "query_idx00215": [
       "level_01"
     ],
     "query_idx00216": [
@@ -667,6 +694,9 @@
     "query_idx00230": [
       "level_01"
     ],
+    "query_idx00232": [
+      "level_01"
+    ],
     "query_idx00233": [
       "level_01"
     ],
@@ -697,7 +727,13 @@
     "query_idx00264": [
       "level_01"
     ],
+    "query_idx00265": [
+      "level_01"
+    ],
     "query_idx00270": [
+      "level_01"
+    ],
+    "query_idx00271": [
       "level_01"
     ],
     "query_idx00273": [
@@ -706,7 +742,16 @@
     "query_idx00286": [
       "level_01"
     ],
+    "query_idx00291": [
+      "level_01"
+    ],
     "query_idx00301": [
+      "level_01"
+    ],
+    "query_idx00302": [
+      "level_01"
+    ],
+    "query_idx00345": [
       "level_01"
     ]
   }
