@@ -96,6 +96,9 @@
   ],
   "path": "bioavailability_ma/progressive_morgan_assay-transfer-trained_records50_no_query_prior/2026-09-10_17-36",
   "samples": {
+    "query_idx00001": [
+      "level_01"
+    ],
     "query_idx00002": [
       "level_01"
     ]
