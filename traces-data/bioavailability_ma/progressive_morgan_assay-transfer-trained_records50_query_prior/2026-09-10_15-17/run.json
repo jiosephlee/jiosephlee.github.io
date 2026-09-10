@@ -7,12 +7,12 @@
   "pilot_size": 3,
   "matrix_output_root": "[local path omitted]",
   "schema_version": "predict_live_run.v1",
-  "dataset": "bbb_martins",
-  "method": "progressive_assay-transfer_assay-transfer-trained_records50_query_prior",
+  "dataset": "bioavailability_ma",
+  "method": "progressive_morgan_assay-transfer-trained_records50_query_prior",
   "run_id": "2026-09-10_15-17",
-  "status": "prepared",
-  "created_at": "2026-09-10T15:17:08-04:00",
-  "updated_at": "2026-09-10T15:17:52-04:00",
+  "status": "running",
+  "created_at": "2026-09-10T15:17:52-04:00",
+  "updated_at": "2026-09-10T15:17:53-04:00",
   "pid": 4175198,
   "process_group": 4175198,
   "process_started_at": "20284847",
@@ -98,6 +98,6 @@
     "--live-run-id",
     "2026-09-10_15-17"
   ],
-  "path": "bbb_martins/progressive_assay-transfer_assay-transfer-trained_records50_query_prior/2026-09-10_15-17",
+  "path": "bioavailability_ma/progressive_morgan_assay-transfer-trained_records50_query_prior/2026-09-10_15-17",
   "samples": {}
 }
