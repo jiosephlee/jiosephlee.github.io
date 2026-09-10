@@ -10,12 +10,12 @@
   "dataset": "bioavailability_ma",
   "method": "progressive_morgan_assay-transfer-trained_records50_no_query_prior",
   "run_id": "2026-09-10_17-36",
-  "status": "failed",
+  "status": "prepared",
   "created_at": "2026-09-10T17:36:20-04:00",
-  "updated_at": "2026-09-10T18:31:27-04:00",
-  "pid": 34398,
-  "process_group": 34398,
-  "process_started_at": "21118826",
+  "updated_at": "2026-09-10T18:36:52-04:00",
+  "pid": 58696,
+  "process_group": 58696,
+  "process_started_at": "21481483",
   "command": [
     "[local path omitted]",
     "-m",
@@ -51,7 +51,9 @@
     "--max-tokens",
     "16384",
     "--request-timeout-s",
-    "900"
+    "900",
+    "--live-run-id",
+    "2026-09-10_17-36"
   ],
   "execution_mode": "live",
   "visibility": "public",
@@ -91,6 +93,8 @@
     "16384",
     "--request-timeout-s",
     "900",
+    "--live-run-id",
+    "2026-09-10_17-36",
     "--live-run-id",
     "2026-09-10_17-36"
   ],
