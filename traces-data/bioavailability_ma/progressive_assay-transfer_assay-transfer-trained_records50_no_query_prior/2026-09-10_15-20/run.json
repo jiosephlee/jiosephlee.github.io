@@ -124,6 +124,12 @@
     "query_idx00008": [
       "level_01"
     ],
+    "query_idx00009": [
+      "level_01"
+    ],
+    "query_idx00010": [
+      "level_01"
+    ],
     "query_idx00011": [
       "level_01"
     ],
@@ -146,6 +152,9 @@
       "level_01"
     ],
     "query_idx00018": [
+      "level_01"
+    ],
+    "query_idx00020": [
       "level_01"
     ],
     "query_idx00021": [
@@ -179,6 +188,9 @@
       "level_01"
     ],
     "query_idx00035": [
+      "level_01"
+    ],
+    "query_idx00036": [
       "level_01"
     ],
     "query_idx00037": [
@@ -259,6 +271,9 @@
     "query_idx00072": [
       "level_01"
     ],
+    "query_idx00073": [
+      "level_01"
+    ],
     "query_idx00074": [
       "level_01"
     ],
@@ -286,6 +301,9 @@
     "query_idx00084": [
       "level_01"
     ],
+    "query_idx00092": [
+      "level_01"
+    ],
     "query_idx00093": [
       "level_01"
     ],
@@ -304,13 +322,25 @@
     "query_idx00101": [
       "level_01"
     ],
+    "query_idx00105": [
+      "level_01"
+    ],
     "query_idx00107": [
       "level_01"
     ],
     "query_idx00110": [
       "level_01"
     ],
+    "query_idx00111": [
+      "level_01"
+    ],
+    "query_idx00112": [
+      "level_01"
+    ],
     "query_idx00113": [
+      "level_01"
+    ],
+    "query_idx00116": [
       "level_01"
     ],
     "query_idx00118": [
@@ -322,10 +352,25 @@
     "query_idx00120": [
       "level_01"
     ],
+    "query_idx00121": [
+      "level_01"
+    ],
+    "query_idx00122": [
+      "level_01"
+    ],
+    "query_idx00126": [
+      "level_01"
+    ],
     "query_idx00127": [
       "level_01"
     ],
     "query_idx00128": [
+      "level_01"
+    ],
+    "query_idx00131": [
+      "level_01"
+    ],
+    "query_idx00132": [
       "level_01"
     ],
     "query_idx00133": [
@@ -337,7 +382,31 @@
     "query_idx00144": [
       "level_01"
     ],
+    "query_idx00153": [
+      "level_01"
+    ],
+    "query_idx00158": [
+      "level_01"
+    ],
     "query_idx00160": [
+      "level_01"
+    ],
+    "query_idx00162": [
+      "level_01"
+    ],
+    "query_idx00164": [
+      "level_01"
+    ],
+    "query_idx00165": [
+      "level_01"
+    ],
+    "query_idx00166": [
+      "level_01"
+    ],
+    "query_idx00167": [
+      "level_01"
+    ],
+    "query_idx00168": [
       "level_01"
     ]
   }
