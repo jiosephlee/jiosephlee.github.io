@@ -47,11 +47,10 @@ function promptText(value){
 }
 function requestMessages(row){
   const messages=(row.llm?.messages||[]).filter(x=>x.role!=='assistant');
-  const firstUser=messages.findIndex(x=>x.role==='user');
-  if(!messages.length)return `<details class="section"><summary>Input prompt</summary><div class="prompt">${promptText(row.input_prompt||'')}</div></details>`;
+  if(!messages.length)return `<div class="prompt">${promptText(row.input_prompt||'')}</div>`;
   return messages.map((message,i)=>{
     const content=typeof message.content==='string'?message.content:JSON.stringify(message.content,null,2);
-    return `<details class="section"${i===firstUser?' open':''}><summary>${esc(message.role||'request')} message${messages.length>1?` ${i+1}`:''}</summary><div class="prompt">${promptText(content)}</div></details>`;
+    return `<div class="block"><div class="key">${esc(message.role||'request')} message${messages.length>1?` ${i+1}`:''}</div><div class="prompt">${promptText(content)}</div></div>`;
   }).join('');
 }
 function structuredOutput(llm){
@@ -71,14 +70,13 @@ function response(row){
   const llm=row.llm||{},validation=llm.structured_output_validation||{},usage=llm.usage||{};
   return `<div class="meta"><span class="chip">model: ${esc(llm.model||'unknown')}</span><span class="chip ${validation.valid===false?'bad':'good'}">validation: ${validation.valid===false?'failed':'valid'}</span><span class="chip">attempts: ${esc(validation.attempt_count??1)}</span><span class="chip">prompt tokens: ${esc(usage.prompt_tokens??'—')}</span><span class="chip">completion tokens: ${esc(usage.completion_tokens??'—')}</span></div>`
     +structuredOutput(llm)
-    +`<details class="section" open><summary>Model reasoning</summary><div class="block"><pre>${esc(llm.reasoning_content||llm.reasoning||'No separate reasoning text was returned.')}</pre></div></details>`
     +`<details class="section"><summary>Raw response and audit metadata</summary><div class="block"><pre>${esc(JSON.stringify(llm,null,2))}</pre></div></details>`;
 }
 function populate(){const d=els.dataset.value||catalog[0]?.dataset||'';els.dataset.innerHTML=options([...new Set(catalog.map(x=>x.dataset))],d);const methods=[...new Set(catalog.filter(x=>x.dataset===els.dataset.value).map(x=>x.method))];const m=methods.includes(els.method.value)?els.method.value:methods[0];els.method.innerHTML=options(methods,m);const runs=catalog.filter(x=>x.dataset===els.dataset.value&&x.method===els.method.value).sort((a,b)=>b.run_id.localeCompare(a.run_id));const id=runs.some(x=>x.run_id===els.run.value)?els.run.value:runs[0]?.run_id;els.run.innerHTML=options(runs.map(x=>x.run_id),id)}
 async function load(){try{const old=current;catalog=(await json('catalog.json')).runs||[];populate();const row=catalog.find(x=>x.dataset===els.dataset.value&&x.method===els.method.value&&x.run_id===els.run.value);if(!row)return;current=await json(`${row.path}/run.json`);render();if(old?.updated_at!==current.updated_at&&selected)await sample(selected)}catch(e){els.detail.innerHTML=`<p class="bad">${esc(e.message)}</p>`}}
 function metric(k,v){return `<div class="metric"><div class="key">${esc(k)}</div><div class="value">${esc(v)}</div></div>`}
 function render(){els.status.innerHTML=metric('status',current.status)+metric('dataset',current.dataset)+metric('method',current.method)+metric('updated',current.updated_at);const names=Object.keys(current.samples||{}).sort();els.samples.innerHTML=names.length?names.map(x=>`<button class="sample${x===selected?' active':''}" data-id="${esc(x)}">${esc(x)}<br><span class="hint">${(current.samples[x]||[]).length} stages</span></button>`).join(''):'<p class="hint">Waiting for the first response…</p>';els.samples.querySelectorAll('button').forEach(b=>b.onclick=()=>sample(b.dataset.id));if(!selected&&names.length)sample(names[0]);}
-async function sample(id){selected=id;render();const stages=current.samples[id]||[];const rows=await Promise.all(stages.map(stage=>json(`${current.path}/samples/${id}/${stage}.json`)));els.detail.innerHTML=`<p class="hint">Cancel: <code>python -m predict.live cancel ${esc(current.path)}</code> · Continue: <code>python -m predict.live continue ${esc(current.path)}</code></p>`+rows.map((row,i)=>`<details class="stage"${i===rows.length-1?' open':''}><summary>${esc(row.stage)}</summary><h3 class="heading" style="padding:0 12px">Output</h3>${response(row)}<h3 class="heading" style="padding:0 12px">Input</h3>${requestMessages(row)}</details>`).join('')}
+async function sample(id){selected=id;render();const stages=current.samples[id]||[];const rows=await Promise.all(stages.map(stage=>json(`${current.path}/samples/${id}/${stage}.json`)));els.detail.innerHTML=`<p class="hint">Cancel: <code>python -m predict.live cancel ${esc(current.path)}</code> · Continue: <code>python -m predict.live continue ${esc(current.path)}</code></p>`+rows.map((row,i)=>{const llm=row.llm||{};return `<details class="stage"${i===rows.length-1?' open':''}><summary>${esc(row.stage)}</summary><details class="section"><summary>input</summary>${requestMessages(row)}</details><details class="section" open><summary>reasoning</summary><div class="block"><pre>${esc(llm.reasoning_content||llm.reasoning||'No separate reasoning text was returned.')}</pre></div></details><details class="section"><summary>final_summary</summary>${response(row)}</details></details>`}).join('')}
 els.dataset.onchange=()=>{els.method.value='';els.run.value='';selected='';populate();load()};els.method.onchange=()=>{els.run.value='';selected='';populate();load()};els.run.onchange=()=>{selected='';load()};els.refresh.onclick=load;load();setInterval(load,5000);
 </script>
 </body></html>
