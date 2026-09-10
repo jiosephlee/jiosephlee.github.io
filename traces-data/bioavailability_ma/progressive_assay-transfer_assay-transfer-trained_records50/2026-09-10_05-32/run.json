@@ -10,9 +10,9 @@
   "dataset": "bioavailability_ma",
   "method": "progressive_assay-transfer_assay-transfer-trained_records50",
   "run_id": "2026-09-10_05-32",
-  "status": "running",
+  "status": "awaiting_review",
   "created_at": "2026-09-10T05:32:09-04:00",
-  "updated_at": "2026-09-10T05:32:09-04:00",
+  "updated_at": "2026-09-10T05:38:51-04:00",
   "pid": 4009115,
   "process_group": 4009115,
   "process_started_at": "16775246",
@@ -88,9 +88,18 @@
     "--live-run-id",
     "2026-09-10_05-32"
   ],
+  "pilot_completed_at": "2026-09-10T09:38:51.811632+00:00",
+  "pilot_indices": [
+    0,
+    1,
+    2
+  ],
   "path": "bioavailability_ma/progressive_assay-transfer_assay-transfer-trained_records50/2026-09-10_05-32",
   "samples": {
     "query_idx00000": [
+      "level_01"
+    ],
+    "query_idx00001": [
       "level_01"
     ],
     "query_idx00002": [
