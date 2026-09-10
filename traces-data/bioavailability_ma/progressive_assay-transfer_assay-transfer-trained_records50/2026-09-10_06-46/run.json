@@ -92,6 +92,9 @@
   "samples": {
     "query_idx00000": [
       "level_01"
+    ],
+    "query_idx00001": [
+      "level_01"
     ]
   }
 }
