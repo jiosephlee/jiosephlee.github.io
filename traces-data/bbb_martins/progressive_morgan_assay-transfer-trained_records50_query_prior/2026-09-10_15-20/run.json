@@ -130,6 +130,9 @@
     "query_idx00009": [
       "level_01"
     ],
+    "query_idx00010": [
+      "level_01"
+    ],
     "query_idx00011": [
       "level_01"
     ],
@@ -230,6 +233,9 @@
       "level_01"
     ],
     "query_idx00052": [
+      "level_01"
+    ],
+    "query_idx00053": [
       "level_01"
     ],
     "query_idx00054": [
@@ -334,7 +340,13 @@
     "query_idx00096": [
       "level_01"
     ],
+    "query_idx00097": [
+      "level_01"
+    ],
     "query_idx00098": [
+      "level_01"
+    ],
+    "query_idx00099": [
       "level_01"
     ],
     "query_idx00100": [
@@ -365,6 +377,9 @@
       "level_01"
     ],
     "query_idx00112": [
+      "level_01"
+    ],
+    "query_idx00114": [
       "level_01"
     ],
     "query_idx00115": [
@@ -427,6 +442,9 @@
     "query_idx00144": [
       "level_01"
     ],
+    "query_idx00145": [
+      "level_01"
+    ],
     "query_idx00146": [
       "level_01"
     ],
@@ -484,6 +502,9 @@
     "query_idx00168": [
       "level_01"
     ],
+    "query_idx00169": [
+      "level_01"
+    ],
     "query_idx00171": [
       "level_01"
     ],
@@ -499,7 +520,16 @@
     "query_idx00177": [
       "level_01"
     ],
+    "query_idx00178": [
+      "level_01"
+    ],
+    "query_idx00179": [
+      "level_01"
+    ],
     "query_idx00181": [
+      "level_01"
+    ],
+    "query_idx00182": [
       "level_01"
     ],
     "query_idx00183": [
@@ -512,6 +542,9 @@
       "level_01"
     ],
     "query_idx00187": [
+      "level_01"
+    ],
+    "query_idx00188": [
       "level_01"
     ],
     "query_idx00189": [
@@ -565,7 +598,31 @@
     "query_idx00227": [
       "level_01"
     ],
+    "query_idx00228": [
+      "level_01"
+    ],
+    "query_idx00233": [
+      "level_01"
+    ],
     "query_idx00235": [
+      "level_01"
+    ],
+    "query_idx00238": [
+      "level_01"
+    ],
+    "query_idx00239": [
+      "level_01"
+    ],
+    "query_idx00240": [
+      "level_01"
+    ],
+    "query_idx00243": [
+      "level_01"
+    ],
+    "query_idx00248": [
+      "level_01"
+    ],
+    "query_idx00258": [
       "level_01"
     ]
   }
