@@ -1,18 +1,18 @@
 {
   "harness": "progressive",
   "harness_version": "reranked-progressive-v2",
-  "prompt_version": "reranked_progressive_l1_simple_v12",
+  "prompt_version": "reranked_progressive_l1_simple_v12_no_query_prior",
   "retrieval_cache_bundle": "[local path omitted]",
   "evaluation_subset": "valid",
   "pilot_size": 3,
   "matrix_output_root": "[local path omitted]",
   "schema_version": "predict_live_run.v1",
-  "dataset": "bioavailability_ma",
-  "method": "progressive_morgan_assay-transfer-trained_records50_query_prior",
+  "dataset": "bbb_martins",
+  "method": "progressive_assay-transfer_assay-transfer-trained_records50_no_query_prior",
   "run_id": "2026-09-10_15-20",
-  "status": "prepared",
-  "created_at": "2026-09-10T15:20:18-04:00",
-  "updated_at": "2026-09-10T15:20:56-04:00",
+  "status": "running",
+  "created_at": "2026-09-10T15:20:56-04:00",
+  "updated_at": "2026-09-10T15:20:57-04:00",
   "pid": 4176461,
   "process_group": 4176461,
   "process_started_at": "20300079",
@@ -98,6 +98,6 @@
     "--live-run-id",
     "2026-09-10_15-20"
   ],
-  "path": "bioavailability_ma/progressive_morgan_assay-transfer-trained_records50_query_prior/2026-09-10_15-20",
+  "path": "bbb_martins/progressive_assay-transfer_assay-transfer-trained_records50_no_query_prior/2026-09-10_15-20",
   "samples": {}
 }
