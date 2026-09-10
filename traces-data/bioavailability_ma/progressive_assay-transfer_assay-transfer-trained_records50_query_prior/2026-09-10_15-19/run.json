@@ -112,6 +112,9 @@
     "query_idx00004": [
       "level_01"
     ],
+    "query_idx00012": [
+      "level_01"
+    ],
     "query_idx00022": [
       "level_01"
     ],
@@ -142,6 +145,9 @@
     "query_idx00060": [
       "level_01"
     ],
+    "query_idx00062": [
+      "level_01"
+    ],
     "query_idx00063": [
       "level_01"
     ],
@@ -160,6 +166,9 @@
     "query_idx00086": [
       "level_01"
     ],
+    "query_idx00091": [
+      "level_01"
+    ],
     "query_idx00095": [
       "level_01"
     ],
@@ -169,7 +178,16 @@
     "query_idx00137": [
       "level_01"
     ],
+    "query_idx00142": [
+      "level_01"
+    ],
+    "query_idx00164": [
+      "level_01"
+    ],
     "query_idx00168": [
+      "level_01"
+    ],
+    "query_idx00175": [
       "level_01"
     ]
   }
