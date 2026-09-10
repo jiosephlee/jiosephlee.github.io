@@ -13,6 +13,16 @@
     },
     {
       "dataset": "bbb_martins",
+      "method": "progressive_assay-transfer_assay-transfer-trained_records50",
+      "run_id": "2026-09-10_11-33",
+      "status": "running",
+      "created_at": "2026-09-10T11:33:35-04:00",
+      "updated_at": "2026-09-10T11:33:35-04:00",
+      "pilot_size": 3,
+      "path": "bbb_martins/progressive_assay-transfer_assay-transfer-trained_records50/2026-09-10_11-33"
+    },
+    {
+      "dataset": "bbb_martins",
       "method": "progressive_morgan_assay-transfer-trained_records50",
       "run_id": "2026-09-10_10-51",
       "status": "complete",
