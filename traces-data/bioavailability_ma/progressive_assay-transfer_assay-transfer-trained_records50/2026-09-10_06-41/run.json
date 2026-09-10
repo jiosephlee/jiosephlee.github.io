@@ -89,5 +89,12 @@
     "2026-09-10_06-41"
   ],
   "path": "bioavailability_ma/progressive_assay-transfer_assay-transfer-trained_records50/2026-09-10_06-41",
-  "samples": {}
+  "samples": {
+    "query_idx00000": [
+      "level_01"
+    ],
+    "query_idx00002": [
+      "level_01"
+    ]
+  }
 }
