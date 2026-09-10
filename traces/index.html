@@ -6,7 +6,7 @@
 <meta http-equiv="Cache-Control" content="no-store">
 <title>Live prediction traces</title>
 <style>
-:root{--ink:#17202a;--muted:#667085;--line:#d9e0e7;--bg:#f4f6f8;--nav:#17212b;--blue:#1769aa}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px system-ui,sans-serif}header{position:sticky;top:0;z-index:2;background:var(--nav);color:white;padding:14px 18px}h1{margin:0 0 12px;font-size:19px}.controls{display:grid;grid-template-columns:repeat(3,minmax(170px,1fr)) auto;gap:9px}label{display:grid;gap:4px;color:#cbd5e1;font-size:11px;font-weight:700}select,button{min-height:36px;border-radius:5px;padding:6px 9px}select{color:white;background:#263442;border:1px solid #526171}button{align-self:end;border:0;background:var(--blue);color:white;font-weight:700}main{max-width:1500px;margin:auto;padding:14px}.status,.panel{background:white;border:1px solid var(--line);border-radius:6px}.status{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);margin-bottom:12px}.metric{background:white;padding:10px}.key{color:var(--muted);font-size:10px;text-transform:uppercase;font-weight:800}.value{margin-top:4px;font:13px ui-monospace,monospace;overflow-wrap:anywhere}.layout{display:grid;grid-template-columns:290px 1fr;gap:12px}.panel h2{font-size:13px;margin:0;padding:10px;border-bottom:1px solid var(--line)}#samples{padding:8px;display:grid;gap:6px}.sample{width:100%;text-align:left;color:var(--ink);background:white;border:1px solid var(--line)}.sample.active{border-color:var(--blue);box-shadow:inset 3px 0 var(--blue)}#detail{padding:10px;min-width:0}.stage{border:1px solid var(--line);margin-bottom:8px}.stage summary{cursor:pointer;padding:9px;background:#f7f9fb;font-weight:750}.block{padding:10px;border-top:1px solid var(--line)}pre{margin:0;white-space:pre-wrap;overflow-wrap:anywhere;font:12px/1.5 ui-monospace,monospace}.hint{color:var(--muted);font-size:12px}.bad{color:#b42318}.good{color:#087a55}@media(max-width:800px){.controls,.status,.layout{grid-template-columns:1fr}.layout{display:block}.panel{margin-bottom:12px}}
+:root{--ink:#17202a;--muted:#667085;--line:#d9e0e7;--bg:#f4f6f8;--nav:#17212b;--blue:#1769aa;--soft:#f7f9fb;--green:#087a55}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px system-ui,sans-serif}header{position:sticky;top:0;z-index:2;background:var(--nav);color:white;padding:14px 18px}h1{margin:0 0 12px;font-size:19px}.controls{display:grid;grid-template-columns:repeat(3,minmax(170px,1fr)) auto;gap:9px}label{display:grid;gap:4px;color:#cbd5e1;font-size:11px;font-weight:700}select,button{min-height:36px;border-radius:5px;padding:6px 9px}select{color:white;background:#263442;border:1px solid #526171}button{align-self:end;border:0;background:var(--blue);color:white;font-weight:700}main{max-width:1500px;margin:auto;padding:14px}.status,.panel{background:white;border:1px solid var(--line);border-radius:6px}.status{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);margin-bottom:12px}.metric{background:white;padding:10px}.key{color:var(--muted);font-size:10px;text-transform:uppercase;font-weight:800}.value{margin-top:4px;font:13px ui-monospace,monospace;overflow-wrap:anywhere}.layout{display:grid;grid-template-columns:290px 1fr;gap:12px}.panel h2{font-size:13px;margin:0;padding:10px;border-bottom:1px solid var(--line)}#samples{padding:8px;display:grid;gap:6px}.sample{width:100%;text-align:left;color:var(--ink);background:white;border:1px solid var(--line)}.sample.active{border-color:var(--blue);box-shadow:inset 3px 0 var(--blue)}#detail{padding:10px;min-width:0}.stage,.section{border:1px solid var(--line);border-radius:5px;margin-bottom:10px}.stage>summary,.section>summary{cursor:pointer;padding:10px;background:var(--soft);font-weight:750}.section{margin:10px}.block{padding:12px;border-top:1px solid var(--line)}pre{margin:0;white-space:pre-wrap;overflow-wrap:anywhere;font:12px/1.55 ui-monospace,monospace}.hint{color:var(--muted);font-size:12px}.bad{color:#b42318}.good{color:var(--green)}.summary{display:grid;grid-template-columns:160px 130px 1fr;gap:10px;padding:12px;background:#f2fbf7;border-top:1px solid #b7e3d1}.summary strong{display:block;margin-top:3px;font-size:16px}.heading{margin:18px 0 7px;font-size:15px}.claim{padding:10px;margin:7px 0;background:var(--soft);border-left:3px solid var(--blue);line-height:1.45}.chips{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px}.chip{padding:2px 6px;border-radius:10px;background:#e7eef5;color:#344054;font:11px ui-monospace,monospace}.clean-list{margin:6px 0;padding-left:20px}.clean-list li{margin:5px 0;line-height:1.45}.prompt{padding:12px;line-height:1.5}.prompt h3{margin:20px 0 7px;padding-bottom:4px;border-bottom:1px solid var(--line);font-size:16px}.prompt h4{margin:16px 0 5px;color:var(--blue);font-size:14px}.prompt p{margin:5px 0}.prompt .bullet{margin:4px 0 4px 18px}.field{display:grid;grid-template-columns:145px 1fr;gap:8px;padding:4px 0}.field b{color:var(--muted);font-size:12px}.mono{font-family:ui-monospace,monospace;overflow-wrap:anywhere}.meta{display:flex;flex-wrap:wrap;gap:6px;padding:10px 12px;border-top:1px solid var(--line)}@media(max-width:800px){.controls,.status,.layout,.summary,.field{grid-template-columns:1fr}.layout{display:block}.panel{margin-bottom:12px}}
 </style>
 </head>
 <body>
@@ -28,11 +28,57 @@ let catalog=[],current=null,selected='';
 const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 async function json(path){const r=await fetch(`${DATA}/${path}?t=${Date.now()}`,{cache:'no-store'});if(!r.ok)throw Error(`${r.status} ${path}`);return r.json()}
 function options(values,selected){return values.map(v=>`<option value="${esc(v)}"${v===selected?' selected':''}>${esc(v)}</option>`).join('')}
+function chips(values){
+  return values?.length
+    ? `<div class="chips">${values.map(x=>`<span class="chip">${esc(x)}</span>`).join('')}</div>`
+    : '';
+}
+function promptText(value){
+  return String(value??'').split('\n').map(line=>{
+    const text=line.trim();
+    if(!text)return '';
+    if(/^(Task|Task guidance|Query molecule|Experimental evidence)$/.test(text))return `<h3>${esc(text)}</h3>`;
+    if(/^(Molecule \d+|Record C\d+)$/.test(text))return `<h4>${esc(text)}</h4>`;
+    const field=text.match(/^(SMILES|Assay-transfer score|Morgan similarity|Result|Species|Conditions|Experimental details|Reported evidence):\s*(.*)$/);
+    if(field)return `<div class="field"><b>${esc(field[1])}</b><span class="${field[1]==='SMILES'?'mono':''}">${esc(field[2])}</span></div>`;
+    if(text.startsWith('- '))return `<div class="bullet">• ${esc(text.slice(2))}</div>`;
+    return `<p>${esc(line)}</p>`;
+  }).join('');
+}
+function requestMessages(row){
+  const messages=(row.llm?.messages||[]).filter(x=>x.role!=='assistant');
+  const firstUser=messages.findIndex(x=>x.role==='user');
+  if(!messages.length)return `<details class="section"><summary>Input prompt</summary><div class="prompt">${promptText(row.input_prompt||'')}</div></details>`;
+  return messages.map((message,i)=>{
+    const content=typeof message.content==='string'?message.content:JSON.stringify(message.content,null,2);
+    return `<details class="section"${i===firstUser?' open':''}><summary>${esc(message.role||'request')} message${messages.length>1?` ${i+1}`:''}</summary><div class="prompt">${promptText(content)}</div></details>`;
+  }).join('');
+}
+function structuredOutput(llm){
+  const output=llm?.content;
+  if(!output||typeof output!=='object'||Array.isArray(output))return `<pre>${esc(typeof output==='string'?output:JSON.stringify(output??{},null,2))}</pre>`;
+  const predictionKey=Object.keys(output).find(x=>x.endsWith('_prediction'))||'prediction';
+  const claims=Array.isArray(output.claims)?output.claims:[];
+  const gaps=Array.isArray(output.evidence_gaps)?output.evidence_gaps:[];
+  const hidden=new Set([predictionKey,'confidence','decision_summary','claims','evidence_gaps']);
+  const rest=Object.fromEntries(Object.entries(output).filter(([key])=>!hidden.has(key)));
+  return `<div class="summary"><div><span class="key">Prediction</span><strong>${esc(output[predictionKey]??'not reported')}</strong></div><div><span class="key">Confidence</span><strong>${esc(output.confidence??'not reported')}</strong></div><div><span class="key">Decision summary</span><strong>${esc(output.decision_summary??'')}</strong></div></div>`
+    +(claims.length?`<div class="block"><h3 class="heading">Evidence claims</h3>${claims.map((claim,i)=>`<div class="claim"><b>${i+1}.</b> ${esc(claim.claim??claim)}${chips(claim.card_ids)}</div>`).join('')}</div>`:'')
+    +(gaps.length?`<div class="block"><h3 class="heading">Evidence gaps</h3><ul class="clean-list">${gaps.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>`:'')
+    +(Object.keys(rest).length?`<details class="section"><summary>Supporting structured fields</summary><div class="block"><pre>${esc(JSON.stringify(rest,null,2))}</pre></div></details>`:'');
+}
+function response(row){
+  const llm=row.llm||{},validation=llm.structured_output_validation||{},usage=llm.usage||{};
+  return `<div class="meta"><span class="chip">model: ${esc(llm.model||'unknown')}</span><span class="chip ${validation.valid===false?'bad':'good'}">validation: ${validation.valid===false?'failed':'valid'}</span><span class="chip">attempts: ${esc(validation.attempt_count??1)}</span><span class="chip">prompt tokens: ${esc(usage.prompt_tokens??'—')}</span><span class="chip">completion tokens: ${esc(usage.completion_tokens??'—')}</span></div>`
+    +structuredOutput(llm)
+    +`<details class="section" open><summary>Model reasoning</summary><div class="block"><pre>${esc(llm.reasoning_content||llm.reasoning||'No separate reasoning text was returned.')}</pre></div></details>`
+    +`<details class="section"><summary>Raw response and audit metadata</summary><div class="block"><pre>${esc(JSON.stringify(llm,null,2))}</pre></div></details>`;
+}
 function populate(){const d=els.dataset.value||catalog[0]?.dataset||'';els.dataset.innerHTML=options([...new Set(catalog.map(x=>x.dataset))],d);const methods=[...new Set(catalog.filter(x=>x.dataset===els.dataset.value).map(x=>x.method))];const m=methods.includes(els.method.value)?els.method.value:methods[0];els.method.innerHTML=options(methods,m);const runs=catalog.filter(x=>x.dataset===els.dataset.value&&x.method===els.method.value).sort((a,b)=>b.run_id.localeCompare(a.run_id));const id=runs.some(x=>x.run_id===els.run.value)?els.run.value:runs[0]?.run_id;els.run.innerHTML=options(runs.map(x=>x.run_id),id)}
 async function load(){try{const old=current;catalog=(await json('catalog.json')).runs||[];populate();const row=catalog.find(x=>x.dataset===els.dataset.value&&x.method===els.method.value&&x.run_id===els.run.value);if(!row)return;current=await json(`${row.path}/run.json`);render();if(old?.updated_at!==current.updated_at&&selected)await sample(selected)}catch(e){els.detail.innerHTML=`<p class="bad">${esc(e.message)}</p>`}}
 function metric(k,v){return `<div class="metric"><div class="key">${esc(k)}</div><div class="value">${esc(v)}</div></div>`}
 function render(){els.status.innerHTML=metric('status',current.status)+metric('dataset',current.dataset)+metric('method',current.method)+metric('updated',current.updated_at);const names=Object.keys(current.samples||{}).sort();els.samples.innerHTML=names.length?names.map(x=>`<button class="sample${x===selected?' active':''}" data-id="${esc(x)}">${esc(x)}<br><span class="hint">${(current.samples[x]||[]).length} stages</span></button>`).join(''):'<p class="hint">Waiting for the first response…</p>';els.samples.querySelectorAll('button').forEach(b=>b.onclick=()=>sample(b.dataset.id));if(!selected&&names.length)sample(names[0]);}
-async function sample(id){selected=id;render();const stages=current.samples[id]||[];const rows=await Promise.all(stages.map(stage=>json(`${current.path}/samples/${id}/${stage}.json`)));els.detail.innerHTML=`<p class="hint">Cancel: <code>python -m predict.live cancel ${esc(current.path)}</code> · Continue: <code>python -m predict.live continue ${esc(current.path)}</code></p>`+rows.map((row,i)=>`<details class="stage"${i===rows.length-1?' open':''}><summary>${esc(row.stage)}</summary><div class="block"><div class="key">Input prompt</div><pre>${esc(row.input_prompt||'')}</pre></div><div class="block"><div class="key">Model response and reasoning</div><pre>${esc(JSON.stringify(row.llm||{},null,2))}</pre></div></details>`).join('')}
+async function sample(id){selected=id;render();const stages=current.samples[id]||[];const rows=await Promise.all(stages.map(stage=>json(`${current.path}/samples/${id}/${stage}.json`)));els.detail.innerHTML=`<p class="hint">Cancel: <code>python -m predict.live cancel ${esc(current.path)}</code> · Continue: <code>python -m predict.live continue ${esc(current.path)}</code></p>`+rows.map((row,i)=>`<details class="stage"${i===rows.length-1?' open':''}><summary>${esc(row.stage)}</summary><h3 class="heading" style="padding:0 12px">Output</h3>${response(row)}<h3 class="heading" style="padding:0 12px">Input</h3>${requestMessages(row)}</details>`).join('')}
 els.dataset.onchange=()=>{els.method.value='';els.run.value='';selected='';populate();load()};els.method.onchange=()=>{els.run.value='';selected='';populate();load()};els.run.onchange=()=>{selected='';load()};els.refresh.onclick=load;load();setInterval(load,5000);
 </script>
 </body></html>
