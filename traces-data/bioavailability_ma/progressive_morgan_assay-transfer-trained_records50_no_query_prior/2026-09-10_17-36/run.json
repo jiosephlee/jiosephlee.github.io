@@ -12,7 +12,7 @@
   "run_id": "2026-09-10_17-36",
   "status": "failed",
   "created_at": "2026-09-10T17:36:20-04:00",
-  "updated_at": "2026-09-10T18:40:16-04:00",
+  "updated_at": "2026-09-10T18:40:27-04:00",
   "pid": 58696,
   "process_group": 58696,
   "process_started_at": "21481483",
@@ -98,7 +98,7 @@
     "--live-run-id",
     "2026-09-10_17-36"
   ],
-  "finished_at": "2026-09-10T22:40:16.321388+00:00",
+  "finished_at": "2026-09-10T22:40:27.379671+00:00",
   "path": "bioavailability_ma/progressive_morgan_assay-transfer-trained_records50_no_query_prior/2026-09-10_17-36",
   "samples": {
     "query_idx00000": [
