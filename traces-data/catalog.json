@@ -75,9 +75,9 @@
       "dataset": "bioavailability_ma",
       "method": "progressive_assay-transfer_assay-transfer-trained_records50",
       "run_id": "2026-09-10_06-46",
-      "status": "awaiting_review",
+      "status": "running",
       "created_at": "2026-09-10T06:46:28-04:00",
-      "updated_at": "2026-09-10T06:49:58-04:00",
+      "updated_at": "2026-09-10T06:50:22-04:00",
       "pilot_size": 3,
       "path": "bioavailability_ma/progressive_assay-transfer_assay-transfer-trained_records50/2026-09-10_06-46"
     }
