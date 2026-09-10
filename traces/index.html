@@ -33,25 +33,8 @@ function chips(values){
     ? `<div class="chips">${values.map(x=>`<span class="chip">${esc(x)}</span>`).join('')}</div>`
     : '';
 }
-function promptText(value){
-  return String(value??'').split('\n').map(line=>{
-    const text=line.trim();
-    if(!text)return '';
-    if(/^(Task|Task guidance|Query molecule|Experimental evidence)$/.test(text))return `<h3>${esc(text)}</h3>`;
-    if(/^(Molecule \d+|Record C\d+)$/.test(text))return `<h4>${esc(text)}</h4>`;
-    const field=text.match(/^(SMILES|Assay-transfer score|Morgan similarity|Result|Species|Conditions|Experimental details|Reported evidence):\s*(.*)$/);
-    if(field)return `<div class="field"><b>${esc(field[1])}</b><span class="${field[1]==='SMILES'?'mono':''}">${esc(field[2])}</span></div>`;
-    if(text.startsWith('- '))return `<div class="bullet">• ${esc(text.slice(2))}</div>`;
-    return `<p>${esc(line)}</p>`;
-  }).join('');
-}
 function requestMessages(row){
-  const messages=(row.llm?.messages||[]).filter(x=>x.role!=='assistant');
-  if(!messages.length)return `<div class="prompt">${promptText(row.input_prompt||'')}</div>`;
-  return messages.map((message,i)=>{
-    const content=typeof message.content==='string'?message.content:JSON.stringify(message.content,null,2);
-    return `<div class="block"><div class="key">${esc(message.role||'request')} message${messages.length>1?` ${i+1}`:''}</div><div class="prompt">${promptText(content)}</div></div>`;
-  }).join('');
+  return `<div class="block"><pre>${esc(row.input_prompt||'')}</pre></div>`;
 }
 function structuredOutput(llm){
   const output=llm?.content;
