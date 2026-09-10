@@ -124,6 +124,9 @@
     "query_idx00008": [
       "level_01"
     ],
+    "query_idx00010": [
+      "level_01"
+    ],
     "query_idx00013": [
       "level_01"
     ],
@@ -193,6 +196,12 @@
     "query_idx00039": [
       "level_01"
     ],
+    "query_idx00040": [
+      "level_01"
+    ],
+    "query_idx00041": [
+      "level_01"
+    ],
     "query_idx00042": [
       "level_01"
     ],
@@ -229,6 +238,9 @@
     "query_idx00062": [
       "level_01"
     ],
+    "query_idx00064": [
+      "level_01"
+    ],
     "query_idx00065": [
       "level_01"
     ],
@@ -259,6 +271,9 @@
     "query_idx00083": [
       "level_01"
     ],
+    "query_idx00086": [
+      "level_01"
+    ],
     "query_idx00087": [
       "level_01"
     ],
@@ -283,7 +298,13 @@
     "query_idx00099": [
       "level_01"
     ],
+    "query_idx00100": [
+      "level_01"
+    ],
     "query_idx00111": [
+      "level_01"
+    ],
+    "query_idx00114": [
       "level_01"
     ],
     "query_idx00116": [
@@ -295,10 +316,28 @@
     "query_idx00120": [
       "level_01"
     ],
+    "query_idx00124": [
+      "level_01"
+    ],
     "query_idx00125": [
       "level_01"
     ],
     "query_idx00131": [
+      "level_01"
+    ],
+    "query_idx00138": [
+      "level_01"
+    ],
+    "query_idx00145": [
+      "level_01"
+    ],
+    "query_idx00148": [
+      "level_01"
+    ],
+    "query_idx00152": [
+      "level_01"
+    ],
+    "query_idx00163": [
       "level_01"
     ]
   }
