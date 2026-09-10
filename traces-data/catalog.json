@@ -20,6 +20,16 @@
       "updated_at": "2026-09-10T05:17:05-04:00",
       "pilot_size": 3,
       "path": "bioavailability_ma/progressive_assay-transfer_assay-transfer-trained_records50/2026-09-10_05-07"
+    },
+    {
+      "dataset": "bioavailability_ma",
+      "method": "progressive_assay-transfer_assay-transfer-trained_records50",
+      "run_id": "2026-09-10_05-19",
+      "status": "running",
+      "created_at": "2026-09-10T05:19:37-04:00",
+      "updated_at": "2026-09-10T05:19:37-04:00",
+      "pilot_size": 3,
+      "path": "bioavailability_ma/progressive_assay-transfer_assay-transfer-trained_records50/2026-09-10_05-19"
     }
   ]
 }
