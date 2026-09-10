@@ -12,7 +12,7 @@
   "run_id": "2026-09-10_15-19",
   "status": "complete",
   "created_at": "2026-09-10T15:19:39-04:00",
-  "updated_at": "2026-09-10T16:15:24-04:00",
+  "updated_at": "2026-09-10T16:15:46-04:00",
   "pid": 4176461,
   "process_group": 4176461,
   "process_started_at": "20300079",
@@ -98,7 +98,7 @@
     "--live-run-id",
     "2026-09-10_15-19"
   ],
-  "finished_at": "2026-09-10T20:15:24.117390+00:00",
+  "finished_at": "2026-09-10T20:15:46.067017+00:00",
   "path": "bioavailability_ma/progressive_assay-transfer_assay-transfer-trained_records50_query_prior/2026-09-10_15-19",
   "samples": {
     "query_idx00000": [
