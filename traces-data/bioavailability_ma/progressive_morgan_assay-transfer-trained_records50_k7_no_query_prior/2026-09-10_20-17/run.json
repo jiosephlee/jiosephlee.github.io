@@ -11,9 +11,9 @@
   "dataset": "bioavailability_ma",
   "method": "progressive_morgan_assay-transfer-trained_records50_k7_no_query_prior",
   "run_id": "2026-09-10_20-17",
-  "status": "prepared",
+  "status": "cancelled",
   "created_at": "2026-09-10T20:17:04-04:00",
-  "updated_at": "2026-09-10T20:17:34-04:00",
+  "updated_at": "2026-09-10T20:23:59-04:00",
   "pid": 92424,
   "process_group": 92424,
   "process_started_at": "22068935",
@@ -101,6 +101,7 @@
     "--live-run-id",
     "2026-09-10_20-17"
   ],
+  "cancellation_reason": "superseded_by_throughput_resume",
   "path": "bioavailability_ma/progressive_morgan_assay-transfer-trained_records50_k7_no_query_prior/2026-09-10_20-17",
   "samples": {
     "query_idx00000": [
