@@ -5,7 +5,7 @@
   "run_id": "2026-09-10_17-36",
   "status": "complete",
   "created_at": "2026-09-10T17:36:07-04:00",
-  "updated_at": "2026-09-11T10:48:13-04:00",
+  "updated_at": "2026-09-11T11:19:37-04:00",
   "finished_at": "2026-09-10T23:18:37.191318+00:00",
   "visibility": "public",
   "execution_mode": "derived_review",
@@ -13,7 +13,7 @@
   "harness_version": "reranked-progressive-v2",
   "prompt_version": "reranked_progressive_l1_simple_v12_no_query_prior",
   "source_run": "bioavailability_ma/progressive_assay-transfer_assay-transfer-trained_records50_no_query_prior/2026-09-10_17-36",
-  "classification_sha256": "367ed219dc352ece7d80767db6fdf0a1465a3b893bfd020206f39914043b293a",
+  "classification_sha256": "19d14042f9bd0a4637b33fe0974a750ffdd357206510ec0c7df6763ff0ace9de",
   "sample_count": 24,
   "path": "Bioavailability_correct_flips/Assay_transfer/2026-09-10_17-36",
   "samples": {
@@ -103,8 +103,8 @@
       "external_knowledge_role"
     ],
     "source": {
-      "classification_schema": "correct_flip_reasoning_classification.v1",
-      "classification_sha256": "367ed219dc352ece7d80767db6fdf0a1465a3b893bfd020206f39914043b293a",
+      "classification_schema": "correct_flip_reasoning_classification.v2",
+      "classification_sha256": "19d14042f9bd0a4637b33fe0974a750ffdd357206510ec0c7df6763ff0ace9de",
       "source_run": "bioavailability_ma/progressive_assay-transfer_assay-transfer-trained_records50_no_query_prior/2026-09-10_17-36",
       "source_run_sha256": "500084f0a740f38fcba5890035dd601cdc4bee35ab6a3ffe025cf663edbbcb83",
       "inference_rerun": false,
@@ -121,13 +121,17 @@
         "llm_prediction": 0,
         "flip_direction": "1->0",
         "primary_driver": "physicochemical_properties",
+        "reasoning_tags": [
+          "physicochemical_properties",
+          "scaffold_family",
+          "functional_group_analysis"
+        ],
         "identity_recognition": "therapeutic_class",
         "external_knowledge_role": "supporting",
         "scaffold_family_reasoning": true,
         "local_transformation_reasoning": false,
         "functional_group_reasoning": true,
         "physicochemical_reasoning": true,
-        "condition_formulation_reasoning": false,
         "record_conflict_quality_reasoning": false,
         "knn_majority_overridden": true,
         "uses_evidence_beyond_top3": true,
@@ -137,8 +141,10 @@
         "primary_basis_ranks": "2;7;8;1",
         "classification_confidence": "high",
         "concise_rationale": "Large polyprenyl quinone size and lipophilicity make the visible low-F anchors more transferable than smaller high-F drugs.",
+        "detailed_explanation": "The assay-transfer k=3 diagnostic produced votes 1, 1, 1 (1 means high and 0 means low), so its majority prediction was high, opposite to the benchmark's low label. Large polyprenyl quinone size and lipophilicity make the visible low-F anchors more transferable than smaller high-F drugs. The LLM treated physicochemical-property reasoning as the decisive argument, overrode the neighborhood majority, and returned the correct low label. CoQ-type identity and poor-solubility knowledge support, but do not replace, the structural argument.",
         "external_knowledge_note": "CoQ-type identity and poor-solubility knowledge support, but do not replace, the structural argument.",
         "tool_output_used": false,
+        "condition_matching_reasoning": false,
         "trace_sha256": "1689d3438a6c0994e694905c07a626bd5f104d5a4a56cc4ea7c821cfbb4ea3bc"
       },
       "query_idx00009": {
@@ -151,13 +157,18 @@
         "llm_prediction": 1,
         "flip_direction": "0->1",
         "primary_driver": "query_memory",
+        "reasoning_tags": [
+          "query_memory",
+          "scaffold_family",
+          "local_transformation",
+          "functional_group_analysis"
+        ],
         "identity_recognition": "exact_or_near_exact_drug",
         "external_knowledge_role": "decision_material",
         "scaffold_family_reasoning": true,
         "local_transformation_reasoning": true,
         "functional_group_reasoning": true,
         "physicochemical_reasoning": false,
-        "condition_formulation_reasoning": false,
         "record_conflict_quality_reasoning": false,
         "knn_majority_overridden": true,
         "uses_evidence_beyond_top3": true,
@@ -167,8 +178,10 @@
         "primary_basis_ranks": "1;2;4;10",
         "classification_confidence": "high",
         "concise_rationale": "The accepted answer supplies codeine's approximately 50 percent F and uses it to reject a unanimous low neighborhood.",
+        "detailed_explanation": "The assay-transfer k=3 diagnostic produced votes 0, 0, 0 (1 means high and 0 means low), so its majority prediction was low, opposite to the benchmark's high label. The accepted answer supplies codeine's approximately 50 percent F and uses it to reject a unanimous low neighborhood. The LLM treated query-specific memory as the decisive argument, overrode the neighborhood majority, and returned the correct high label. The query-specific human F value is absent from the prompt and is decisive.",
         "external_knowledge_note": "The query-specific human F value is absent from the prompt and is decisive.",
         "tool_output_used": false,
+        "condition_matching_reasoning": false,
         "trace_sha256": "998b70b2d7bd9a8530bd6f30b332ad35fb08f260bffa61523fbb277ec22725e7"
       },
       "query_idx00010": {
@@ -181,13 +194,19 @@
         "llm_prediction": 1,
         "flip_direction": "0->1",
         "primary_driver": "query_memory",
+        "reasoning_tags": [
+          "query_memory",
+          "scaffold_family",
+          "local_transformation",
+          "functional_group_analysis",
+          "condition_matching"
+        ],
         "identity_recognition": "exact_or_near_exact_drug",
         "external_knowledge_role": "decision_material",
         "scaffold_family_reasoning": true,
         "local_transformation_reasoning": true,
         "functional_group_reasoning": true,
         "physicochemical_reasoning": false,
-        "condition_formulation_reasoning": true,
         "record_conflict_quality_reasoning": false,
         "knn_majority_overridden": true,
         "uses_evidence_beyond_top3": true,
@@ -197,8 +216,10 @@
         "primary_basis_ranks": "5;4;2",
         "classification_confidence": "high",
         "concise_rationale": "The fasted codeine row is rescued by the same remembered approximately 50 percent F and morphinan substitution argument.",
+        "detailed_explanation": "The assay-transfer k=3 diagnostic produced votes 0, 0, 0 (1 means high and 0 means low), so its majority prediction was low, opposite to the benchmark's high label. The fasted codeine row is rescued by the same remembered approximately 50 percent F and morphinan substitution argument. The LLM treated query-specific memory as the decisive argument, overrode the neighborhood majority, and returned the correct high label. The query-specific human F value is absent from the prompt and is decisive.",
         "external_knowledge_note": "The query-specific human F value is absent from the prompt and is decisive.",
         "tool_output_used": false,
+        "condition_matching_reasoning": true,
         "trace_sha256": "802eb51f8089cb834b9c4c5baaaf3a52d9e4f92df672caf792788265a6bbe927"
       },
       "query_idx00019": {
@@ -211,13 +232,16 @@
         "llm_prediction": 1,
         "flip_direction": "0->1",
         "primary_driver": "query_memory",
+        "reasoning_tags": [
+          "query_memory",
+          "physicochemical_properties"
+        ],
         "identity_recognition": "exact_or_near_exact_drug",
         "external_knowledge_role": "decision_material",
         "scaffold_family_reasoning": false,
         "local_transformation_reasoning": false,
         "functional_group_reasoning": false,
         "physicochemical_reasoning": true,
-        "condition_formulation_reasoning": false,
         "record_conflict_quality_reasoning": false,
         "knn_majority_overridden": true,
         "uses_evidence_beyond_top3": true,
@@ -227,8 +251,10 @@
         "primary_basis_ranks": "1;2;3;4;5;7",
         "classification_confidence": "high",
         "concise_rationale": "Remembered deferasirox F around 70 percent overrides a unanimous low retrieved set.",
+        "detailed_explanation": "The assay-transfer k=3 diagnostic produced votes 0, 0, 0 (1 means high and 0 means low), so its majority prediction was low, opposite to the benchmark's high label. Remembered deferasirox F around 70 percent overrides a unanimous low retrieved set. The LLM treated query-specific memory as the decisive argument, overrode the neighborhood majority, and returned the correct high label. The query-specific human F value is absent from the prompt and is decisive.",
         "external_knowledge_note": "The query-specific human F value is absent from the prompt and is decisive.",
         "tool_output_used": false,
+        "condition_matching_reasoning": false,
         "trace_sha256": "fe444afb65818f48119bd7eba9c143c57f67c68e76d4a87e728a5611419f152d"
       },
       "query_idx00020": {
@@ -241,13 +267,17 @@
         "llm_prediction": 1,
         "flip_direction": "0->1",
         "primary_driver": "query_memory",
+        "reasoning_tags": [
+          "query_memory",
+          "physicochemical_properties",
+          "condition_matching"
+        ],
         "identity_recognition": "exact_or_near_exact_drug",
         "external_knowledge_role": "decision_material",
         "scaffold_family_reasoning": false,
         "local_transformation_reasoning": false,
         "functional_group_reasoning": false,
         "physicochemical_reasoning": true,
-        "condition_formulation_reasoning": true,
         "record_conflict_quality_reasoning": false,
         "knn_majority_overridden": true,
         "uses_evidence_beyond_top3": true,
@@ -257,8 +287,10 @@
         "primary_basis_ranks": "3;5;1;2",
         "classification_confidence": "high",
         "concise_rationale": "Remembered deferasirox F around 70 percent overrides the low set under fasted conditions.",
+        "detailed_explanation": "The assay-transfer k=3 diagnostic produced votes 0, 0, 0 (1 means high and 0 means low), so its majority prediction was low, opposite to the benchmark's high label. Remembered deferasirox F around 70 percent overrides the low set under fasted conditions. The LLM treated query-specific memory as the decisive argument, overrode the neighborhood majority, and returned the correct high label. The query-specific human F value is absent from the prompt and is decisive.",
         "external_knowledge_note": "The query-specific human F value is absent from the prompt and is decisive.",
         "tool_output_used": false,
+        "condition_matching_reasoning": true,
         "trace_sha256": "89540c777c73fa5f41540d2074d6504941079a8db7e93482e56b5c340a21f6dc"
       },
       "query_idx00038": {
@@ -271,13 +303,18 @@
         "llm_prediction": 0,
         "flip_direction": "1->0",
         "primary_driver": "physicochemical_properties",
+        "reasoning_tags": [
+          "physicochemical_properties",
+          "scaffold_family",
+          "functional_group_analysis",
+          "condition_matching"
+        ],
         "identity_recognition": "therapeutic_class",
         "external_knowledge_role": "supporting",
         "scaffold_family_reasoning": true,
         "local_transformation_reasoning": false,
         "functional_group_reasoning": true,
         "physicochemical_reasoning": true,
-        "condition_formulation_reasoning": true,
         "record_conflict_quality_reasoning": false,
         "knn_majority_overridden": true,
         "uses_evidence_beyond_top3": true,
@@ -287,8 +324,10 @@
         "primary_basis_ranks": "1;2;8;9;10;4;6;7;5",
         "classification_confidence": "high",
         "concise_rationale": "A free amidine plus carboxylate is treated as a poorly permeable zwitterionic peptidomimetic and matched to low-F inhibitors.",
+        "detailed_explanation": "The assay-transfer k=3 diagnostic produced votes 1, 1, 1 (1 means high and 0 means low), so its majority prediction was high, opposite to the benchmark's low label. A free amidine plus carboxylate is treated as a poorly permeable zwitterionic peptidomimetic and matched to low-F inhibitors. The LLM treated physicochemical-property reasoning as the decisive argument, overrode the neighborhood majority, and returned the correct low label. The thrombin-inhibitor class recognition supports interpretation; no query-specific F is asserted.",
         "external_knowledge_note": "The thrombin-inhibitor class recognition supports interpretation; no query-specific F is asserted.",
         "tool_output_used": false,
+        "condition_matching_reasoning": true,
         "trace_sha256": "5978369e1c7c680407975370cf1223d6fedd0d14ec6b53b82cbf5dfb1c377b7c"
       },
       "query_idx00052": {
@@ -301,13 +340,17 @@
         "llm_prediction": 1,
         "flip_direction": "0->1",
         "primary_driver": "evidence_depth_weighting",
+        "reasoning_tags": [
+          "evidence_depth_weighting",
+          "scaffold_family",
+          "functional_group_analysis"
+        ],
         "identity_recognition": "therapeutic_class",
         "external_knowledge_role": "none",
         "scaffold_family_reasoning": true,
         "local_transformation_reasoning": false,
         "functional_group_reasoning": true,
         "physicochemical_reasoning": false,
-        "condition_formulation_reasoning": false,
         "record_conflict_quality_reasoning": false,
         "knn_majority_overridden": true,
         "uses_evidence_beyond_top3": true,
@@ -317,8 +360,10 @@
         "primary_basis_ranks": "9;4;8;1;2;3",
         "classification_confidence": "medium",
         "concise_rationale": "Lower-ranked high-F indole and basic-amine analogues are allowed to outweigh the unanimous top-three low labels.",
+        "detailed_explanation": "The assay-transfer k=3 diagnostic produced votes 0, 0, 0 (1 means high and 0 means low), so its majority prediction was low, opposite to the benchmark's high label. Lower-ranked high-F indole and basic-amine analogues are allowed to outweigh the unanimous top-three low labels. The LLM treated evidence-depth weighting as the decisive argument, overrode the neighborhood majority, and returned the correct high label. No material query-specific fact beyond the visible structures and records is needed.",
         "external_knowledge_note": "No material query-specific fact beyond the visible structures and records is needed.",
         "tool_output_used": false,
+        "condition_matching_reasoning": false,
         "trace_sha256": "9cea8f51593e8962f7468436737ff44aa5a88d6349fe6061412d5bd3424eb8f7"
       },
       "query_idx00065": {
@@ -331,13 +376,16 @@
         "llm_prediction": 1,
         "flip_direction": "0->1",
         "primary_driver": "scaffold_family",
+        "reasoning_tags": [
+          "scaffold_family",
+          "functional_group_analysis"
+        ],
         "identity_recognition": "therapeutic_class",
         "external_knowledge_role": "none",
         "scaffold_family_reasoning": true,
         "local_transformation_reasoning": false,
         "functional_group_reasoning": true,
         "physicochemical_reasoning": false,
-        "condition_formulation_reasoning": false,
         "record_conflict_quality_reasoning": false,
         "knn_majority_overridden": true,
         "uses_evidence_beyond_top3": true,
@@ -347,8 +395,10 @@
         "primary_basis_ranks": "3;7;6;4;1;2",
         "classification_confidence": "high",
         "concise_rationale": "Omadacycline and tetracycline provide an above-threshold family neighborhood that outweighs unrelated low records.",
+        "detailed_explanation": "The assay-transfer k=3 diagnostic produced votes 0, 0, 1 (1 means high and 0 means low), so its majority prediction was low, opposite to the benchmark's high label. Omadacycline and tetracycline provide an above-threshold family neighborhood that outweighs unrelated low records. The LLM treated scaffold-family reasoning as the decisive argument, overrode the neighborhood majority, and returned the correct high label. The decision is grounded in visible tetracycline-family records.",
         "external_knowledge_note": "The decision is grounded in visible tetracycline-family records.",
         "tool_output_used": false,
+        "condition_matching_reasoning": false,
         "trace_sha256": "963f2b8fa7a43774d445ed841e17fc6b059c8902f2e2405b93031327b3c85b7c"
       },
       "query_idx00113": {
@@ -361,13 +411,17 @@
         "llm_prediction": 1,
         "flip_direction": "0->1",
         "primary_driver": "query_memory",
+        "reasoning_tags": [
+          "query_memory",
+          "scaffold_family",
+          "physicochemical_properties"
+        ],
         "identity_recognition": "exact_or_near_exact_drug",
         "external_knowledge_role": "decision_material",
         "scaffold_family_reasoning": true,
         "local_transformation_reasoning": false,
         "functional_group_reasoning": false,
         "physicochemical_reasoning": true,
-        "condition_formulation_reasoning": false,
         "record_conflict_quality_reasoning": false,
         "knn_majority_overridden": true,
         "uses_evidence_beyond_top3": true,
@@ -377,8 +431,10 @@
         "primary_basis_ranks": "1;3;6;2",
         "classification_confidence": "high",
         "concise_rationale": "The trace identifies dacomitinib and invokes an unsupplied afatinib-like approximately 70 percent F despite an all-low neighborhood.",
+        "detailed_explanation": "The assay-transfer k=3 diagnostic produced votes 0, 0, 0 (1 means high and 0 means low), so its majority prediction was low, opposite to the benchmark's high label. The trace identifies dacomitinib and invokes an unsupplied afatinib-like approximately 70 percent F despite an all-low neighborhood. The LLM treated query-specific memory as the decisive argument, overrode the neighborhood majority, and returned the correct high label. The close-drug PK value and approved oral-class behavior are absent from the prompt.",
         "external_knowledge_note": "The close-drug PK value and approved oral-class behavior are absent from the prompt.",
         "tool_output_used": false,
+        "condition_matching_reasoning": false,
         "trace_sha256": "b471985b9f263aa4d6591ef56e45ab7d86209ac6c4250b0185d8cfc67b8cd65f"
       },
       "query_idx00127": {
@@ -391,13 +447,16 @@
         "llm_prediction": 1,
         "flip_direction": "0->1",
         "primary_driver": "query_memory",
+        "reasoning_tags": [
+          "query_memory",
+          "condition_matching"
+        ],
         "identity_recognition": "exact_or_near_exact_drug",
         "external_knowledge_role": "decision_material",
         "scaffold_family_reasoning": false,
         "local_transformation_reasoning": false,
         "functional_group_reasoning": false,
         "physicochemical_reasoning": false,
-        "condition_formulation_reasoning": true,
         "record_conflict_quality_reasoning": false,
         "knn_majority_overridden": true,
         "uses_evidence_beyond_top3": true,
@@ -407,8 +466,10 @@
         "primary_basis_ranks": "5;4;3",
         "classification_confidence": "high",
         "concise_rationale": "Known ritonavir F and CYP3A4 inhibition override uniformly low retrieved evidence.",
+        "detailed_explanation": "The assay-transfer k=3 diagnostic produced votes 0, 0, 0 (1 means high and 0 means low), so its majority prediction was low, opposite to the benchmark's high label. Known ritonavir F and CYP3A4 inhibition override uniformly low retrieved evidence. The LLM treated query-specific memory as the decisive argument, overrode the neighborhood majority, and returned the correct high label. Both the query-specific F range and inhibition argument are extra-prompt and decisive.",
         "external_knowledge_note": "Both the query-specific F range and inhibition argument are extra-prompt and decisive.",
         "tool_output_used": false,
+        "condition_matching_reasoning": true,
         "trace_sha256": "48b87046892a77d5d755e1cc0e164edd1111e0f25c8e0bbf38a2ce621ac4a878"
       },
       "query_idx00129": {
@@ -421,13 +482,17 @@
         "llm_prediction": 0,
         "flip_direction": "1->0",
         "primary_driver": "scaffold_family",
+        "reasoning_tags": [
+          "scaffold_family",
+          "local_transformation",
+          "functional_group_analysis"
+        ],
         "identity_recognition": "therapeutic_class",
         "external_knowledge_role": "supporting",
         "scaffold_family_reasoning": true,
         "local_transformation_reasoning": true,
         "functional_group_reasoning": true,
         "physicochemical_reasoning": false,
-        "condition_formulation_reasoning": false,
         "record_conflict_quality_reasoning": false,
         "knn_majority_overridden": true,
         "uses_evidence_beyond_top3": true,
@@ -437,8 +502,10 @@
         "primary_basis_ranks": "1;5;4;3;8",
         "classification_confidence": "high",
         "concise_rationale": "Low-F phenolic opioid analogues are preferred over high-F nonphenolic or remote drugs.",
+        "detailed_explanation": "The assay-transfer k=3 diagnostic produced votes 1, 1, 1 (1 means high and 0 means low), so its majority prediction was high, opposite to the benchmark's low label. Low-F phenolic opioid analogues are preferred over high-F nonphenolic or remote drugs. The LLM treated scaffold-family reasoning as the decisive argument, overrode the neighborhood majority, and returned the correct low label. First-pass interpretation supports a contrast already visible in the records.",
         "external_knowledge_note": "First-pass interpretation supports a contrast already visible in the records.",
         "tool_output_used": false,
+        "condition_matching_reasoning": false,
         "trace_sha256": "cd2b05a0613f9ba7456dd6b7b754acf849beefe7418b9168bfac65843dc3ca01"
       },
       "query_idx00134": {
@@ -451,13 +518,20 @@
         "llm_prediction": 0,
         "flip_direction": "1->0",
         "primary_driver": "query_memory",
+        "reasoning_tags": [
+          "query_memory",
+          "scaffold_family",
+          "local_transformation",
+          "functional_group_analysis",
+          "physicochemical_properties",
+          "record_conflict_quality"
+        ],
         "identity_recognition": "exact_or_near_exact_drug",
         "external_knowledge_role": "decision_material",
         "scaffold_family_reasoning": true,
         "local_transformation_reasoning": true,
         "functional_group_reasoning": true,
         "physicochemical_reasoning": true,
-        "condition_formulation_reasoning": false,
         "record_conflict_quality_reasoning": true,
         "knn_majority_overridden": true,
         "uses_evidence_beyond_top3": true,
@@ -467,8 +541,10 @@
         "primary_basis_ranks": "2;8;6;3",
         "classification_confidence": "medium",
         "concise_rationale": "5-azacytidine recognition and cytidine-deaminase instability determine the low call, with some low nucleoside support.",
+        "detailed_explanation": "The assay-transfer k=3 diagnostic produced votes 1, 1, 1 (1 means high and 0 means low), so its majority prediction was high, opposite to the benchmark's low label. 5-azacytidine recognition and cytidine-deaminase instability determine the low call, with some low nucleoside support. The LLM treated query-specific memory as the decisive argument, overrode the neighborhood majority, and returned the correct low label. The query-specific deamination and instability liabilities are extra-prompt; retained card identity quality is imperfect.",
         "external_knowledge_note": "The query-specific deamination and instability liabilities are extra-prompt; retained card identity quality is imperfect.",
         "tool_output_used": false,
+        "condition_matching_reasoning": false,
         "trace_sha256": "cb03de2ab5eb4f79fb08f24e0eb46260b4e8574088831ea37a1569ede98c85a6"
       },
       "query_idx00145": {
@@ -481,13 +557,17 @@
         "llm_prediction": 0,
         "flip_direction": "1->0",
         "primary_driver": "query_memory",
+        "reasoning_tags": [
+          "query_memory",
+          "functional_group_analysis",
+          "physicochemical_properties"
+        ],
         "identity_recognition": "exact_or_near_exact_drug",
         "external_knowledge_role": "decision_material",
         "scaffold_family_reasoning": false,
         "local_transformation_reasoning": false,
         "functional_group_reasoning": true,
         "physicochemical_reasoning": true,
-        "condition_formulation_reasoning": false,
         "record_conflict_quality_reasoning": false,
         "knn_majority_overridden": true,
         "uses_evidence_beyond_top3": true,
@@ -497,8 +577,10 @@
         "primary_basis_ranks": "4;2;3;5",
         "classification_confidence": "high",
         "concise_rationale": "Remembered eprosartan F around 13 percent overrides an otherwise high-F retrieved set.",
+        "detailed_explanation": "The assay-transfer k=3 diagnostic produced votes 1, 1, 1 (1 means high and 0 means low), so its majority prediction was high, opposite to the benchmark's low label. Remembered eprosartan F around 13 percent overrides an otherwise high-F retrieved set. The LLM treated query-specific memory as the decisive argument, overrode the neighborhood majority, and returned the correct low label. The query-specific F value is absent from the prompt and decisive.",
         "external_knowledge_note": "The query-specific F value is absent from the prompt and decisive.",
         "tool_output_used": false,
+        "condition_matching_reasoning": false,
         "trace_sha256": "b7118a48756f408168a7960911d15208137da01e21bd73b5ed27b37e1ca60731"
       },
       "query_idx00146": {
@@ -511,13 +593,18 @@
         "llm_prediction": 0,
         "flip_direction": "1->0",
         "primary_driver": "local_transformation",
+        "reasoning_tags": [
+          "local_transformation",
+          "scaffold_family",
+          "functional_group_analysis",
+          "physicochemical_properties"
+        ],
         "identity_recognition": "therapeutic_class",
         "external_knowledge_role": "supporting",
         "scaffold_family_reasoning": true,
         "local_transformation_reasoning": true,
         "functional_group_reasoning": true,
         "physicochemical_reasoning": true,
-        "condition_formulation_reasoning": false,
         "record_conflict_quality_reasoning": false,
         "knn_majority_overridden": true,
         "uses_evidence_beyond_top3": false,
@@ -527,8 +614,10 @@
         "primary_basis_ranks": "1;1;3;2",
         "classification_confidence": "medium",
         "concise_rationale": "The unprotected hydroxy-keto steroid is placed with low-F natural steroids rather than protected high-F steroid analogues.",
+        "detailed_explanation": "The assay-transfer k=3 diagnostic produced votes 1, 1, 1 (1 means high and 0 means low), so its majority prediction was high, opposite to the benchmark's low label. The unprotected hydroxy-keto steroid is placed with low-F natural steroids rather than protected high-F steroid analogues. The LLM treated local-transformation reasoning as the decisive argument, overrode the neighborhood majority, and returned the correct low label. Conjugation and reduction liabilities are inferred from structure rather than supplied measurements.",
         "external_knowledge_note": "Conjugation and reduction liabilities are inferred from structure rather than supplied measurements.",
         "tool_output_used": false,
+        "condition_matching_reasoning": false,
         "trace_sha256": "f0ad35466e8a9c3ca1acbebf9ccc490b1e36e1e97f2bfbb8c684284b13842401"
       },
       "query_idx00190": {
@@ -541,13 +630,17 @@
         "llm_prediction": 1,
         "flip_direction": "0->1",
         "primary_driver": "query_memory",
+        "reasoning_tags": [
+          "query_memory",
+          "local_transformation",
+          "physicochemical_properties"
+        ],
         "identity_recognition": "exact_or_near_exact_drug",
         "external_knowledge_role": "decision_material",
         "scaffold_family_reasoning": false,
         "local_transformation_reasoning": true,
         "functional_group_reasoning": false,
         "physicochemical_reasoning": true,
-        "condition_formulation_reasoning": false,
         "record_conflict_quality_reasoning": false,
         "knn_majority_overridden": true,
         "uses_evidence_beyond_top3": true,
@@ -557,8 +650,10 @@
         "primary_basis_ranks": "5;6;7;9",
         "classification_confidence": "high",
         "concise_rationale": "Roxithromycin identity, acid-stable oxime, and remembered high F overturn chemically remote low records.",
+        "detailed_explanation": "The assay-transfer k=3 diagnostic produced votes 0, 0, 0 (1 means high and 0 means low), so its majority prediction was low, opposite to the benchmark's high label. Roxithromycin identity, acid-stable oxime, and remembered high F overturn chemically remote low records. The LLM treated query-specific memory as the decisive argument, overrode the neighborhood majority, and returned the correct high label. The query-specific class PK and acid-stability facts are absent from the prompt.",
         "external_knowledge_note": "The query-specific class PK and acid-stability facts are absent from the prompt.",
         "tool_output_used": false,
+        "condition_matching_reasoning": false,
         "trace_sha256": "61d72be0a90e43be719b444da8895b0f8d162e9846bb1361b93daeaf65785a6e"
       },
       "query_idx00200": {
@@ -571,13 +666,17 @@
         "llm_prediction": 0,
         "flip_direction": "1->0",
         "primary_driver": "scaffold_family",
+        "reasoning_tags": [
+          "scaffold_family",
+          "local_transformation",
+          "functional_group_analysis"
+        ],
         "identity_recognition": "exact_or_near_exact_drug",
         "external_knowledge_role": "supporting",
         "scaffold_family_reasoning": true,
         "local_transformation_reasoning": true,
         "functional_group_reasoning": true,
         "physicochemical_reasoning": false,
-        "condition_formulation_reasoning": false,
         "record_conflict_quality_reasoning": false,
         "knn_majority_overridden": true,
         "uses_evidence_beyond_top3": true,
@@ -587,8 +686,10 @@
         "primary_basis_ranks": "1;2;3;5;8",
         "classification_confidence": "high",
         "concise_rationale": "Phenolic morphinan low-F examples are favored over O-methylated or otherwise modified high-F opioids.",
+        "detailed_explanation": "The assay-transfer k=3 diagnostic produced votes 1, 1, 1 (1 means high and 0 means low), so its majority prediction was high, opposite to the benchmark's low label. Phenolic morphinan low-F examples are favored over O-methylated or otherwise modified high-F opioids. The LLM treated scaffold-family reasoning as the decisive argument, overrode the neighborhood majority, and returned the correct low label. Oxymorphone recognition supports a visible within-family substitution contrast.",
         "external_knowledge_note": "Oxymorphone recognition supports a visible within-family substitution contrast.",
         "tool_output_used": false,
+        "condition_matching_reasoning": false,
         "trace_sha256": "5bcb3f2a719a434d33db63dfbd024c920f6893864fed33656ce874d122cc9565"
       },
       "query_idx00202": {
@@ -601,13 +702,17 @@
         "llm_prediction": 0,
         "flip_direction": "1->0",
         "primary_driver": "local_transformation",
+        "reasoning_tags": [
+          "local_transformation",
+          "scaffold_family",
+          "functional_group_analysis"
+        ],
         "identity_recognition": "exact_or_near_exact_drug",
         "external_knowledge_role": "supporting",
         "scaffold_family_reasoning": true,
         "local_transformation_reasoning": true,
         "functional_group_reasoning": true,
         "physicochemical_reasoning": false,
-        "condition_formulation_reasoning": false,
         "record_conflict_quality_reasoning": false,
         "knn_majority_overridden": true,
         "uses_evidence_beyond_top3": true,
@@ -617,8 +722,10 @@
         "primary_basis_ranks": "9;2;1",
         "classification_confidence": "high",
         "concise_rationale": "Free phenol, 6-keto, and 14-hydroxy liabilities distinguish naloxone from protected high-F morphinans.",
+        "detailed_explanation": "The assay-transfer k=3 diagnostic produced votes 1, 1, 1 (1 means high and 0 means low), so its majority prediction was high, opposite to the benchmark's low label. Free phenol, 6-keto, and 14-hydroxy liabilities distinguish naloxone from protected high-F morphinans. The LLM treated local-transformation reasoning as the decisive argument, overrode the neighborhood majority, and returned the correct low label. Remembered naloxone first-pass behavior supports, but visible morphinan contrasts carry the argument.",
         "external_knowledge_note": "Remembered naloxone first-pass behavior supports, but visible morphinan contrasts carry the argument.",
         "tool_output_used": false,
+        "condition_matching_reasoning": false,
         "trace_sha256": "184909d6ecdae675c7354fac4c9271c0a38dd184341cd08f21aa49760314c5e3"
       },
       "query_idx00215": {
@@ -631,13 +738,18 @@
         "llm_prediction": 0,
         "flip_direction": "1->0",
         "primary_driver": "query_memory",
+        "reasoning_tags": [
+          "query_memory",
+          "scaffold_family",
+          "functional_group_analysis",
+          "physicochemical_properties"
+        ],
         "identity_recognition": "exact_or_near_exact_drug",
         "external_knowledge_role": "decision_material",
         "scaffold_family_reasoning": true,
         "local_transformation_reasoning": false,
         "functional_group_reasoning": true,
         "physicochemical_reasoning": true,
-        "condition_formulation_reasoning": false,
         "record_conflict_quality_reasoning": false,
         "knn_majority_overridden": true,
         "uses_evidence_beyond_top3": true,
@@ -647,8 +759,10 @@
         "primary_basis_ranks": "6;1;2;5;6",
         "classification_confidence": "medium",
         "concise_rationale": "A lubiprostone-type identity and rapid presystemic metabolism override predominantly high-F evidence.",
+        "detailed_explanation": "The assay-transfer k=3 diagnostic produced votes 1, 1, 1 (1 means high and 0 means low), so its majority prediction was high, opposite to the benchmark's low label. A lubiprostone-type identity and rapid presystemic metabolism override predominantly high-F evidence. The LLM treated query-specific memory as the decisive argument, overrode the neighborhood majority, and returned the correct low label. The scaffold-specific very-low systemic exposure claim is extra-prompt and decisive.",
         "external_knowledge_note": "The scaffold-specific very-low systemic exposure claim is extra-prompt and decisive.",
         "tool_output_used": false,
+        "condition_matching_reasoning": false,
         "trace_sha256": "c9a17a0ec3c4e076e9051b9e07b3415211e221419e2ee7fc6667b311da5083a6"
       },
       "query_idx00225": {
@@ -661,13 +775,19 @@
         "llm_prediction": 0,
         "flip_direction": "1->0",
         "primary_driver": "query_memory",
+        "reasoning_tags": [
+          "query_memory",
+          "scaffold_family",
+          "local_transformation",
+          "functional_group_analysis",
+          "physicochemical_properties"
+        ],
         "identity_recognition": "exact_or_near_exact_drug",
         "external_knowledge_role": "decision_material",
         "scaffold_family_reasoning": true,
         "local_transformation_reasoning": true,
         "functional_group_reasoning": true,
         "physicochemical_reasoning": true,
-        "condition_formulation_reasoning": false,
         "record_conflict_quality_reasoning": false,
         "knn_majority_overridden": true,
         "uses_evidence_beyond_top3": true,
@@ -677,8 +797,10 @@
         "primary_basis_ranks": "4;7;6",
         "classification_confidence": "high",
         "concise_rationale": "Decitabine recognition and acid/deaminase liability override uniformly high-F nucleoside evidence.",
+        "detailed_explanation": "The assay-transfer k=3 diagnostic produced votes 1, 1, 1 (1 means high and 0 means low), so its majority prediction was high, opposite to the benchmark's low label. Decitabine recognition and acid/deaminase liability override uniformly high-F nucleoside evidence. The LLM treated query-specific memory as the decisive argument, overrode the neighborhood majority, and returned the correct low label. The query-specific instability and deamination facts are absent from the prompt.",
         "external_knowledge_note": "The query-specific instability and deamination facts are absent from the prompt.",
         "tool_output_used": false,
+        "condition_matching_reasoning": false,
         "trace_sha256": "c706b1340d92e61b3ec905f313a8aeab74d4059f93c8ecaca0c4cf09383ba6d9"
       },
       "query_idx00233": {
@@ -691,13 +813,17 @@
         "llm_prediction": 0,
         "flip_direction": "1->0",
         "primary_driver": "query_memory",
+        "reasoning_tags": [
+          "query_memory",
+          "scaffold_family",
+          "physicochemical_properties"
+        ],
         "identity_recognition": "exact_or_near_exact_drug",
         "external_knowledge_role": "decision_material",
         "scaffold_family_reasoning": true,
         "local_transformation_reasoning": false,
         "functional_group_reasoning": false,
         "physicochemical_reasoning": true,
-        "condition_formulation_reasoning": false,
         "record_conflict_quality_reasoning": false,
         "knn_majority_overridden": true,
         "uses_evidence_beyond_top3": true,
@@ -707,8 +833,10 @@
         "primary_basis_ranks": "2;8;1",
         "classification_confidence": "high",
         "concise_rationale": "Atorvastatin recognition and CYP3A4 first-pass knowledge turn a high neighborhood into a low prediction.",
+        "detailed_explanation": "The assay-transfer k=3 diagnostic produced votes 1, 1, 1 (1 means high and 0 means low), so its majority prediction was high, opposite to the benchmark's low label. Atorvastatin recognition and CYP3A4 first-pass knowledge turn a high neighborhood into a low prediction. The LLM treated query-specific memory as the decisive argument, overrode the neighborhood majority, and returned the correct low label. The query-specific identity and clearance explanation are extra-prompt and materially determine the call.",
         "external_knowledge_note": "The query-specific identity and clearance explanation are extra-prompt and materially determine the call.",
         "tool_output_used": false,
+        "condition_matching_reasoning": false,
         "trace_sha256": "1bbbab7a1af6bcd2bcb0affaafb1048a28781df5f4575d3015397520fe71683c"
       },
       "query_idx00238": {
@@ -721,13 +849,17 @@
         "llm_prediction": 0,
         "flip_direction": "1->0",
         "primary_driver": "physicochemical_properties",
+        "reasoning_tags": [
+          "physicochemical_properties",
+          "scaffold_family",
+          "functional_group_analysis"
+        ],
         "identity_recognition": "therapeutic_class",
         "external_knowledge_role": "supporting",
         "scaffold_family_reasoning": true,
         "local_transformation_reasoning": false,
         "functional_group_reasoning": true,
         "physicochemical_reasoning": true,
-        "condition_formulation_reasoning": false,
         "record_conflict_quality_reasoning": false,
         "knn_majority_overridden": true,
         "uses_evidence_beyond_top3": true,
@@ -737,8 +869,10 @@
         "primary_basis_ranks": "4;1;6",
         "classification_confidence": "high",
         "concise_rationale": "The free amidine and carboxylate are read as a poorly permeable dabigatran-like zwitterion despite high comparators.",
+        "detailed_explanation": "The assay-transfer k=3 diagnostic produced votes 1, 1, 1 (1 means high and 0 means low), so its majority prediction was high, opposite to the benchmark's low label. The free amidine and carboxylate are read as a poorly permeable dabigatran-like zwitterion despite high comparators. The LLM treated physicochemical-property reasoning as the decisive argument, overrode the neighborhood majority, and returned the correct low label. Class recognition supports a property argument; no visible query tool output was used.",
         "external_knowledge_note": "Class recognition supports a property argument; no visible query tool output was used.",
         "tool_output_used": false,
+        "condition_matching_reasoning": false,
         "trace_sha256": "ada3727702b1fd3c7eb90efee0b82ce1c963f54724f11df0c48889a285bf0ce3"
       },
       "query_idx00245": {
@@ -751,13 +885,18 @@
         "llm_prediction": 0,
         "flip_direction": "1->0",
         "primary_driver": "query_memory",
+        "reasoning_tags": [
+          "query_memory",
+          "scaffold_family",
+          "local_transformation",
+          "condition_matching"
+        ],
         "identity_recognition": "exact_or_near_exact_drug",
         "external_knowledge_role": "decision_material",
         "scaffold_family_reasoning": true,
         "local_transformation_reasoning": true,
         "functional_group_reasoning": false,
         "physicochemical_reasoning": false,
-        "condition_formulation_reasoning": true,
         "record_conflict_quality_reasoning": false,
         "knn_majority_overridden": true,
         "uses_evidence_beyond_top3": false,
@@ -767,8 +906,10 @@
         "primary_basis_ranks": "3",
         "classification_confidence": "high",
         "concise_rationale": "Remembered ramelteon F around 1.8 percent overrides high-F tasimelteon evidence.",
+        "detailed_explanation": "The assay-transfer k=3 diagnostic produced votes 1, 1, 1 (1 means high and 0 means low), so its majority prediction was high, opposite to the benchmark's low label. Remembered ramelteon F around 1.8 percent overrides high-F tasimelteon evidence. The LLM treated query-specific memory as the decisive argument, overrode the neighborhood majority, and returned the correct low label. The query-specific F value and first-pass explanation are absent and decisive.",
         "external_knowledge_note": "The query-specific F value and first-pass explanation are absent and decisive.",
         "tool_output_used": false,
+        "condition_matching_reasoning": true,
         "trace_sha256": "91f464ea9b545b86d7a8d9c61d937cd2816a03530e7f9f17c7c33398293d60d1"
       },
       "query_idx00246": {
@@ -781,13 +922,17 @@
         "llm_prediction": 1,
         "flip_direction": "0->1",
         "primary_driver": "query_memory",
+        "reasoning_tags": [
+          "query_memory",
+          "scaffold_family",
+          "local_transformation"
+        ],
         "identity_recognition": "exact_or_near_exact_drug",
         "external_knowledge_role": "decision_material",
         "scaffold_family_reasoning": true,
         "local_transformation_reasoning": true,
         "functional_group_reasoning": false,
         "physicochemical_reasoning": false,
-        "condition_formulation_reasoning": false,
         "record_conflict_quality_reasoning": false,
         "knn_majority_overridden": true,
         "uses_evidence_beyond_top3": true,
@@ -797,8 +942,10 @@
         "primary_basis_ranks": "6;5;2",
         "classification_confidence": "high",
         "concise_rationale": "Remembered biperiden F around 33 percent overrides uniformly low retrieved labels.",
+        "detailed_explanation": "The assay-transfer k=3 diagnostic produced votes 0, 0, 0 (1 means high and 0 means low), so its majority prediction was low, opposite to the benchmark's high label. Remembered biperiden F around 33 percent overrides uniformly low retrieved labels. The LLM treated query-specific memory as the decisive argument, overrode the neighborhood majority, and returned the correct high label. The query-specific F value is absent from the prompt and decisive.",
         "external_knowledge_note": "The query-specific F value is absent from the prompt and decisive.",
         "tool_output_used": false,
+        "condition_matching_reasoning": false,
         "trace_sha256": "a540af1af3224859dac164cd2710b8cf7cf92e1dce73e3414d47fa094f2899da"
       },
       "query_idx00256": {
@@ -811,13 +958,17 @@
         "llm_prediction": 0,
         "flip_direction": "1->0",
         "primary_driver": "query_memory",
+        "reasoning_tags": [
+          "query_memory",
+          "local_transformation",
+          "functional_group_analysis"
+        ],
         "identity_recognition": "exact_or_near_exact_drug",
         "external_knowledge_role": "decision_material",
         "scaffold_family_reasoning": false,
         "local_transformation_reasoning": true,
         "functional_group_reasoning": true,
         "physicochemical_reasoning": false,
-        "condition_formulation_reasoning": false,
         "record_conflict_quality_reasoning": false,
         "knn_majority_overridden": true,
         "uses_evidence_beyond_top3": true,
@@ -827,8 +978,10 @@
         "primary_basis_ranks": "10;1",
         "classification_confidence": "high",
         "concise_rationale": "Coumarin identity and CYP2A6 first-pass knowledge overturn an all-high retrieved set.",
+        "detailed_explanation": "The assay-transfer k=3 diagnostic produced votes 1, 1, 1 (1 means high and 0 means low), so its majority prediction was high, opposite to the benchmark's low label. Coumarin identity and CYP2A6 first-pass knowledge overturn an all-high retrieved set. The LLM treated query-specific memory as the decisive argument, overrode the neighborhood majority, and returned the correct low label. The query-specific low F and metabolic route are absent from the prompt and decisive.",
         "external_knowledge_note": "The query-specific low F and metabolic route are absent from the prompt and decisive.",
         "tool_output_used": false,
+        "condition_matching_reasoning": false,
         "trace_sha256": "2da02d2ce96c7351f36bdef7d0ee019468e7715822f8f4b9f31029524c27f24e"
       }
     }
