@@ -83,6 +83,16 @@
     },
     {
       "dataset": "bbb_martins",
+      "method": "progressive_assay-transfer_assay-transfer-trained_records50_k5_no_scores_no_smiles_no_query_smiles_no_query_prior",
+      "run_id": "2026-09-11_03-27",
+      "status": "running",
+      "created_at": "2026-09-11T03:27:45-04:00",
+      "updated_at": "2026-09-11T03:27:45-04:00",
+      "pilot_size": 3,
+      "path": "bbb_martins/progressive_assay-transfer_assay-transfer-trained_records50_k5_no_scores_no_smiles_no_query_smiles_no_query_prior/2026-09-11_03-27"
+    },
+    {
+      "dataset": "bbb_martins",
       "method": "progressive_assay-transfer_assay-transfer-trained_records50_k5_no_scores_no_smiles_no_query_smiles_query_prior",
       "run_id": "2026-09-11_03-26",
       "status": "prepared",
@@ -215,9 +225,9 @@
       "dataset": "bbb_martins",
       "method": "progressive_morgan_assay-transfer-trained_records50_k5_no_scores_no_smiles_no_query_smiles_query_prior",
       "run_id": "2026-09-11_03-27",
-      "status": "running",
+      "status": "prepared",
       "created_at": "2026-09-11T03:27:14-04:00",
-      "updated_at": "2026-09-11T03:27:14-04:00",
+      "updated_at": "2026-09-11T03:27:44-04:00",
       "pilot_size": 3,
       "path": "bbb_martins/progressive_morgan_assay-transfer-trained_records50_k5_no_scores_no_smiles_no_query_smiles_query_prior/2026-09-11_03-27"
     },
@@ -413,6 +423,16 @@
     },
     {
       "dataset": "bioavailability_ma",
+      "method": "progressive_assay-transfer_assay-transfer-trained_records50_k5_no_scores_no_smiles_no_query_smiles_no_query_prior",
+      "run_id": "2026-09-11_03-27",
+      "status": "running",
+      "created_at": "2026-09-11T03:27:45-04:00",
+      "updated_at": "2026-09-11T03:27:46-04:00",
+      "pilot_size": 3,
+      "path": "bioavailability_ma/progressive_assay-transfer_assay-transfer-trained_records50_k5_no_scores_no_smiles_no_query_smiles_no_query_prior/2026-09-11_03-27"
+    },
+    {
+      "dataset": "bioavailability_ma",
       "method": "progressive_assay-transfer_assay-transfer-trained_records50_k5_no_scores_no_smiles_no_query_smiles_query_prior",
       "run_id": "2026-09-11_03-26",
       "status": "prepared",
@@ -545,9 +565,9 @@
       "dataset": "bioavailability_ma",
       "method": "progressive_morgan_assay-transfer-trained_records50_k5_no_scores_no_smiles_no_query_smiles_query_prior",
       "run_id": "2026-09-11_03-27",
-      "status": "running",
+      "status": "prepared",
       "created_at": "2026-09-11T03:27:15-04:00",
-      "updated_at": "2026-09-11T03:27:15-04:00",
+      "updated_at": "2026-09-11T03:27:45-04:00",
       "pilot_size": 3,
       "path": "bioavailability_ma/progressive_morgan_assay-transfer-trained_records50_k5_no_scores_no_smiles_no_query_smiles_query_prior/2026-09-11_03-27"
     },
