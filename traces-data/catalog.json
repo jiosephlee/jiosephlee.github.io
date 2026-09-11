@@ -53,6 +53,16 @@
     },
     {
       "dataset": "bbb_martins",
+      "method": "progressive_assay-transfer_assay-transfer-trained_records50_k3_no_query_prior",
+      "run_id": "2026-09-10_20-26",
+      "status": "complete",
+      "created_at": "2026-09-10T20:26:37-04:00",
+      "updated_at": "2026-09-10T22:33:46-04:00",
+      "pilot_size": 3,
+      "path": "bbb_martins/progressive_assay-transfer_assay-transfer-trained_records50_k3_no_query_prior/2026-09-10_20-26"
+    },
+    {
+      "dataset": "bbb_martins",
       "method": "progressive_assay-transfer_assay-transfer-trained_records50_k5_no_query_prior",
       "run_id": "2026-09-10_20-14",
       "status": "cancelled",
@@ -63,6 +73,16 @@
     },
     {
       "dataset": "bbb_martins",
+      "method": "progressive_assay-transfer_assay-transfer-trained_records50_k5_no_query_prior",
+      "run_id": "2026-09-10_20-27",
+      "status": "complete",
+      "created_at": "2026-09-10T20:27:11-04:00",
+      "updated_at": "2026-09-10T22:33:46-04:00",
+      "pilot_size": 3,
+      "path": "bbb_martins/progressive_assay-transfer_assay-transfer-trained_records50_k5_no_query_prior/2026-09-10_20-27"
+    },
+    {
+      "dataset": "bbb_martins",
       "method": "progressive_assay-transfer_assay-transfer-trained_records50_k7_no_query_prior",
       "run_id": "2026-09-10_20-15",
       "status": "cancelled",
@@ -70,6 +90,16 @@
       "updated_at": "2026-09-10T20:23:56-04:00",
       "pilot_size": 3,
       "path": "bbb_martins/progressive_assay-transfer_assay-transfer-trained_records50_k7_no_query_prior/2026-09-10_20-15"
+    },
+    {
+      "dataset": "bbb_martins",
+      "method": "progressive_assay-transfer_assay-transfer-trained_records50_k7_no_query_prior",
+      "run_id": "2026-09-10_20-27",
+      "status": "complete",
+      "created_at": "2026-09-10T20:27:41-04:00",
+      "updated_at": "2026-09-10T22:33:46-04:00",
+      "pilot_size": 3,
+      "path": "bbb_martins/progressive_assay-transfer_assay-transfer-trained_records50_k7_no_query_prior/2026-09-10_20-27"
     },
     {
       "dataset": "bbb_martins",
@@ -123,6 +153,16 @@
     },
     {
       "dataset": "bbb_martins",
+      "method": "progressive_morgan_assay-transfer-trained_records50_k3_no_query_prior",
+      "run_id": "2026-09-10_20-28",
+      "status": "complete",
+      "created_at": "2026-09-10T20:28:13-04:00",
+      "updated_at": "2026-09-10T22:33:47-04:00",
+      "pilot_size": 3,
+      "path": "bbb_martins/progressive_morgan_assay-transfer-trained_records50_k3_no_query_prior/2026-09-10_20-28"
+    },
+    {
+      "dataset": "bbb_martins",
       "method": "progressive_morgan_assay-transfer-trained_records50_k5_no_query_prior",
       "run_id": "2026-09-10_20-16",
       "status": "cancelled",
@@ -133,6 +173,16 @@
     },
     {
       "dataset": "bbb_martins",
+      "method": "progressive_morgan_assay-transfer-trained_records50_k5_no_query_prior",
+      "run_id": "2026-09-10_20-28",
+      "status": "complete",
+      "created_at": "2026-09-10T20:28:47-04:00",
+      "updated_at": "2026-09-10T22:33:47-04:00",
+      "pilot_size": 3,
+      "path": "bbb_martins/progressive_morgan_assay-transfer-trained_records50_k5_no_query_prior/2026-09-10_20-28"
+    },
+    {
+      "dataset": "bbb_martins",
       "method": "progressive_morgan_assay-transfer-trained_records50_k7_no_query_prior",
       "run_id": "2026-09-10_20-17",
       "status": "cancelled",
@@ -140,6 +190,16 @@
       "updated_at": "2026-09-10T20:23:57-04:00",
       "pilot_size": 3,
       "path": "bbb_martins/progressive_morgan_assay-transfer-trained_records50_k7_no_query_prior/2026-09-10_20-17"
+    },
+    {
+      "dataset": "bbb_martins",
+      "method": "progressive_morgan_assay-transfer-trained_records50_k7_no_query_prior",
+      "run_id": "2026-09-10_20-29",
+      "status": "complete",
+      "created_at": "2026-09-10T20:29:18-04:00",
+      "updated_at": "2026-09-10T22:33:47-04:00",
+      "pilot_size": 3,
+      "path": "bbb_martins/progressive_morgan_assay-transfer-trained_records50_k7_no_query_prior/2026-09-10_20-29"
     },
     {
       "dataset": "bbb_martins",
@@ -263,6 +323,16 @@
     },
     {
       "dataset": "bioavailability_ma",
+      "method": "progressive_assay-transfer_assay-transfer-trained_records50_k3_no_query_prior",
+      "run_id": "2026-09-10_20-26",
+      "status": "complete",
+      "created_at": "2026-09-10T20:26:37-04:00",
+      "updated_at": "2026-09-10T22:33:48-04:00",
+      "pilot_size": 3,
+      "path": "bioavailability_ma/progressive_assay-transfer_assay-transfer-trained_records50_k3_no_query_prior/2026-09-10_20-26"
+    },
+    {
+      "dataset": "bioavailability_ma",
       "method": "progressive_assay-transfer_assay-transfer-trained_records50_k5_no_query_prior",
       "run_id": "2026-09-10_20-14",
       "status": "cancelled",
@@ -273,6 +343,16 @@
     },
     {
       "dataset": "bioavailability_ma",
+      "method": "progressive_assay-transfer_assay-transfer-trained_records50_k5_no_query_prior",
+      "run_id": "2026-09-10_20-27",
+      "status": "complete",
+      "created_at": "2026-09-10T20:27:11-04:00",
+      "updated_at": "2026-09-10T22:33:48-04:00",
+      "pilot_size": 3,
+      "path": "bioavailability_ma/progressive_assay-transfer_assay-transfer-trained_records50_k5_no_query_prior/2026-09-10_20-27"
+    },
+    {
+      "dataset": "bioavailability_ma",
       "method": "progressive_assay-transfer_assay-transfer-trained_records50_k7_no_query_prior",
       "run_id": "2026-09-10_20-15",
       "status": "cancelled",
@@ -280,6 +360,16 @@
       "updated_at": "2026-09-10T20:23:58-04:00",
       "pilot_size": 3,
       "path": "bioavailability_ma/progressive_assay-transfer_assay-transfer-trained_records50_k7_no_query_prior/2026-09-10_20-15"
+    },
+    {
+      "dataset": "bioavailability_ma",
+      "method": "progressive_assay-transfer_assay-transfer-trained_records50_k7_no_query_prior",
+      "run_id": "2026-09-10_20-27",
+      "status": "complete",
+      "created_at": "2026-09-10T20:27:41-04:00",
+      "updated_at": "2026-09-10T22:33:49-04:00",
+      "pilot_size": 3,
+      "path": "bioavailability_ma/progressive_assay-transfer_assay-transfer-trained_records50_k7_no_query_prior/2026-09-10_20-27"
     },
     {
       "dataset": "bioavailability_ma",
@@ -333,6 +423,16 @@
     },
     {
       "dataset": "bioavailability_ma",
+      "method": "progressive_morgan_assay-transfer-trained_records50_k3_no_query_prior",
+      "run_id": "2026-09-10_20-28",
+      "status": "complete",
+      "created_at": "2026-09-10T20:28:13-04:00",
+      "updated_at": "2026-09-10T22:33:49-04:00",
+      "pilot_size": 3,
+      "path": "bioavailability_ma/progressive_morgan_assay-transfer-trained_records50_k3_no_query_prior/2026-09-10_20-28"
+    },
+    {
+      "dataset": "bioavailability_ma",
       "method": "progressive_morgan_assay-transfer-trained_records50_k5_no_query_prior",
       "run_id": "2026-09-10_20-16",
       "status": "cancelled",
@@ -343,6 +443,16 @@
     },
     {
       "dataset": "bioavailability_ma",
+      "method": "progressive_morgan_assay-transfer-trained_records50_k5_no_query_prior",
+      "run_id": "2026-09-10_20-28",
+      "status": "complete",
+      "created_at": "2026-09-10T20:28:47-04:00",
+      "updated_at": "2026-09-10T22:33:49-04:00",
+      "pilot_size": 3,
+      "path": "bioavailability_ma/progressive_morgan_assay-transfer-trained_records50_k5_no_query_prior/2026-09-10_20-28"
+    },
+    {
+      "dataset": "bioavailability_ma",
       "method": "progressive_morgan_assay-transfer-trained_records50_k7_no_query_prior",
       "run_id": "2026-09-10_20-17",
       "status": "cancelled",
@@ -350,6 +460,16 @@
       "updated_at": "2026-09-10T20:23:59-04:00",
       "pilot_size": 3,
       "path": "bioavailability_ma/progressive_morgan_assay-transfer-trained_records50_k7_no_query_prior/2026-09-10_20-17"
+    },
+    {
+      "dataset": "bioavailability_ma",
+      "method": "progressive_morgan_assay-transfer-trained_records50_k7_no_query_prior",
+      "run_id": "2026-09-10_20-29",
+      "status": "complete",
+      "created_at": "2026-09-10T20:29:18-04:00",
+      "updated_at": "2026-09-10T22:33:50-04:00",
+      "pilot_size": 3,
+      "path": "bioavailability_ma/progressive_morgan_assay-transfer-trained_records50_k7_no_query_prior/2026-09-10_20-29"
     },
     {
       "dataset": "bioavailability_ma",
