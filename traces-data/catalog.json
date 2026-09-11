@@ -55,11 +55,21 @@
       "dataset": "bbb_martins",
       "method": "progressive_assay-transfer_assay-transfer-trained_records50_k5_no_query_prior",
       "run_id": "2026-09-10_20-14",
-      "status": "running",
+      "status": "prepared",
       "created_at": "2026-09-10T20:14:59-04:00",
-      "updated_at": "2026-09-10T20:14:59-04:00",
+      "updated_at": "2026-09-10T20:15:29-04:00",
       "pilot_size": 3,
       "path": "bbb_martins/progressive_assay-transfer_assay-transfer-trained_records50_k5_no_query_prior/2026-09-10_20-14"
+    },
+    {
+      "dataset": "bbb_martins",
+      "method": "progressive_assay-transfer_assay-transfer-trained_records50_k7_no_query_prior",
+      "run_id": "2026-09-10_20-15",
+      "status": "running",
+      "created_at": "2026-09-10T20:15:29-04:00",
+      "updated_at": "2026-09-10T20:15:29-04:00",
+      "pilot_size": 3,
+      "path": "bbb_martins/progressive_assay-transfer_assay-transfer-trained_records50_k7_no_query_prior/2026-09-10_20-15"
     },
     {
       "dataset": "bbb_martins",
@@ -225,11 +235,21 @@
       "dataset": "bioavailability_ma",
       "method": "progressive_assay-transfer_assay-transfer-trained_records50_k5_no_query_prior",
       "run_id": "2026-09-10_20-14",
-      "status": "running",
+      "status": "prepared",
       "created_at": "2026-09-10T20:14:59-04:00",
-      "updated_at": "2026-09-10T20:14:59-04:00",
+      "updated_at": "2026-09-10T20:15:29-04:00",
       "pilot_size": 3,
       "path": "bioavailability_ma/progressive_assay-transfer_assay-transfer-trained_records50_k5_no_query_prior/2026-09-10_20-14"
+    },
+    {
+      "dataset": "bioavailability_ma",
+      "method": "progressive_assay-transfer_assay-transfer-trained_records50_k7_no_query_prior",
+      "run_id": "2026-09-10_20-15",
+      "status": "running",
+      "created_at": "2026-09-10T20:15:30-04:00",
+      "updated_at": "2026-09-10T20:15:30-04:00",
+      "pilot_size": 3,
+      "path": "bioavailability_ma/progressive_assay-transfer_assay-transfer-trained_records50_k7_no_query_prior/2026-09-10_20-15"
     },
     {
       "dataset": "bioavailability_ma",
