@@ -165,9 +165,9 @@
       "dataset": "bbb_martins",
       "method": "progressive_joint_assay-transfer-trained_records50",
       "run_id": "2026-09-11_03-22",
-      "status": "running",
+      "status": "prepared",
       "created_at": "2026-09-11T03:22:13-04:00",
-      "updated_at": "2026-09-11T03:22:13-04:00",
+      "updated_at": "2026-09-11T03:22:18-04:00",
       "pilot_size": 3,
       "path": "bbb_martins/progressive_joint_assay-transfer-trained_records50/2026-09-11_03-22"
     },
@@ -505,9 +505,9 @@
       "dataset": "bioavailability_ma",
       "method": "progressive_joint_assay-transfer-trained_records50",
       "run_id": "2026-09-11_03-22",
-      "status": "running",
+      "status": "prepared",
       "created_at": "2026-09-11T03:22:13-04:00",
-      "updated_at": "2026-09-11T03:22:14-04:00",
+      "updated_at": "2026-09-11T03:22:19-04:00",
       "pilot_size": 3,
       "path": "bioavailability_ma/progressive_joint_assay-transfer-trained_records50/2026-09-11_03-22"
     },
