@@ -105,5 +105,9 @@
     "2026-09-11_03-27"
   ],
   "path": "bbb_martins/progressive_morgan_assay-transfer-trained_records50_k5_no_scores_no_smiles_no_query_smiles_query_prior/2026-09-11_03-27",
-  "samples": {}
+  "samples": {
+    "query_idx00002": [
+      "level_01"
+    ]
+  }
 }
