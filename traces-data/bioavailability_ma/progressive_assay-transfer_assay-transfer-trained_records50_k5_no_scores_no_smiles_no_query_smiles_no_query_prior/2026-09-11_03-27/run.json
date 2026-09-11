@@ -106,6 +106,12 @@
   ],
   "path": "bioavailability_ma/progressive_assay-transfer_assay-transfer-trained_records50_k5_no_scores_no_smiles_no_query_smiles_no_query_prior/2026-09-11_03-27",
   "samples": {
+    "query_idx00000": [
+      "level_01"
+    ],
+    "query_idx00006": [
+      "level_01"
+    ],
     "query_idx00009": [
       "level_01"
     ]
