@@ -193,11 +193,21 @@
     },
     {
       "dataset": "bbb_martins",
-      "method": "progressive_joint_assay-transfer-trained_records50_no_scores_query_prior",
+      "method": "progressive_joint_assay-transfer-trained_records50_no_scores_no_query_prior",
       "run_id": "2026-09-11_11-33",
       "status": "running",
+      "created_at": "2026-09-11T11:33:53-04:00",
+      "updated_at": "2026-09-11T11:33:53-04:00",
+      "pilot_size": 3,
+      "path": "bbb_martins/progressive_joint_assay-transfer-trained_records50_no_scores_no_query_prior/2026-09-11_11-33"
+    },
+    {
+      "dataset": "bbb_martins",
+      "method": "progressive_joint_assay-transfer-trained_records50_no_scores_query_prior",
+      "run_id": "2026-09-11_11-33",
+      "status": "prepared",
       "created_at": "2026-09-11T11:33:16-04:00",
-      "updated_at": "2026-09-11T11:33:17-04:00",
+      "updated_at": "2026-09-11T11:33:52-04:00",
       "pilot_size": 3,
       "path": "bbb_martins/progressive_joint_assay-transfer-trained_records50_no_scores_query_prior/2026-09-11_11-33"
     },
@@ -563,11 +573,21 @@
     },
     {
       "dataset": "bioavailability_ma",
-      "method": "progressive_joint_assay-transfer-trained_records50_no_scores_query_prior",
+      "method": "progressive_joint_assay-transfer-trained_records50_no_scores_no_query_prior",
       "run_id": "2026-09-11_11-33",
       "status": "running",
+      "created_at": "2026-09-11T11:33:53-04:00",
+      "updated_at": "2026-09-11T11:33:54-04:00",
+      "pilot_size": 3,
+      "path": "bioavailability_ma/progressive_joint_assay-transfer-trained_records50_no_scores_no_query_prior/2026-09-11_11-33"
+    },
+    {
+      "dataset": "bioavailability_ma",
+      "method": "progressive_joint_assay-transfer-trained_records50_no_scores_query_prior",
+      "run_id": "2026-09-11_11-33",
+      "status": "prepared",
       "created_at": "2026-09-11T11:33:17-04:00",
-      "updated_at": "2026-09-11T11:33:18-04:00",
+      "updated_at": "2026-09-11T11:33:52-04:00",
       "pilot_size": 3,
       "path": "bioavailability_ma/progressive_joint_assay-transfer-trained_records50_no_scores_query_prior/2026-09-11_11-33"
     },
