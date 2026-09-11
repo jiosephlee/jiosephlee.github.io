@@ -105,5 +105,15 @@
     "2026-09-11_03-27"
   ],
   "path": "bbb_martins/progressive_assay-transfer_assay-transfer-trained_records50_k5_no_scores_no_smiles_no_query_smiles_no_query_prior/2026-09-11_03-27",
-  "samples": {}
+  "samples": {
+    "query_idx00001": [
+      "level_01"
+    ],
+    "query_idx00004": [
+      "level_01"
+    ],
+    "query_idx00005": [
+      "level_01"
+    ]
+  }
 }
