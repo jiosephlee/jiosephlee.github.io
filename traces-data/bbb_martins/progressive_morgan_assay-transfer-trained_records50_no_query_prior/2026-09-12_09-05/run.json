@@ -11,9 +11,9 @@
   "dataset": "bbb_martins",
   "method": "progressive_morgan_assay-transfer-trained_records50_no_query_prior",
   "run_id": "2026-09-12_09-05",
-  "status": "prepared",
+  "status": "complete",
   "created_at": "2026-09-12T09:05:19-04:00",
-  "updated_at": "2026-09-12T09:06:23-04:00",
+  "updated_at": "2026-09-12T10:18:06-04:00",
   "pid": 625339,
   "process_group": 625339,
   "process_started_at": "35325828",
@@ -110,6 +110,7 @@
     "--live-run-id",
     "2026-09-12_09-05"
   ],
+  "finished_at": "2026-09-12T14:18:06.370648+00:00",
   "path": "bbb_martins/progressive_morgan_assay-transfer-trained_records50_no_query_prior/2026-09-12_09-05",
   "samples": {
     "query_idx00000": [
