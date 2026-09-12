@@ -112,13 +112,13 @@
   ],
   "path": "bioavailability_ma/progressive_assay-transfer_assay-transfer-trained_records50_query_prior/2026-09-12_01-17",
   "samples": {
+    "query_idx00003": [
+      "level_01"
+    ],
     "query_idx00006": [
       "level_01"
     ],
-    "query_idx00008": [
-      "level_01"
-    ],
-    "query_idx00011": [
+    "query_idx00007": [
       "level_01"
     ]
   }
