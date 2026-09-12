@@ -603,6 +603,16 @@
     },
     {
       "dataset": "bioavailability_ma",
+      "method": "progressive_assay-transfer_assay-transfer-trained_records50_no_query_prior",
+      "run_id": "2026-09-12_01-23",
+      "status": "running",
+      "created_at": "2026-09-12T01:23:02-04:00",
+      "updated_at": "2026-09-12T01:23:03-04:00",
+      "pilot_size": 3,
+      "path": "bioavailability_ma/progressive_assay-transfer_assay-transfer-trained_records50_no_query_prior/2026-09-12_01-23"
+    },
+    {
+      "dataset": "bioavailability_ma",
       "method": "progressive_assay-transfer_assay-transfer-trained_records50_query_prior",
       "run_id": "2026-09-10_15-17",
       "status": "cancelled",
