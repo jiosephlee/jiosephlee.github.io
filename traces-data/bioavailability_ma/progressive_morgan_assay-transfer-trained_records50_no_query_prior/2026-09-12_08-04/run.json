@@ -1,7 +1,7 @@
 {
   "harness": "progressive",
   "harness_version": "reranked-progressive-v2",
-  "prompt_version": "reranked_progressive_l1_simple_v33_no_query_prior",
+  "prompt_version": "reranked_progressive_l1_simple_v34_no_query_prior",
   "retrieval_cache_bundle": "[local path omitted]",
   "evaluation_subset": "valid",
   "l1_molecules": 10,
@@ -9,20 +9,20 @@
   "matrix_output_root": "[local path omitted]",
   "schema_version": "predict_live_run.v1",
   "dataset": "bioavailability_ma",
-  "method": "progressive_assay-transfer_assay-transfer-trained_records50_no_query_prior",
-  "run_id": "2026-09-12_07-46",
-  "status": "prepared",
-  "created_at": "2026-09-12T07:46:13-04:00",
-  "updated_at": "2026-09-12T07:47:14-04:00",
-  "pid": 588860,
-  "process_group": 588860,
-  "process_started_at": "34858586",
+  "method": "progressive_morgan_assay-transfer-trained_records50_no_query_prior",
+  "run_id": "2026-09-12_08-04",
+  "status": "running",
+  "created_at": "2026-09-12T08:04:36-04:00",
+  "updated_at": "2026-09-12T08:04:37-04:00",
+  "pid": 596766,
+  "process_group": 596766,
+  "process_started_at": "34961758",
   "command": [
     "[local path omitted]",
     "-m",
     "tools.chembl_tool.paper_experiments.run_progressive_matrix",
     "--output-root",
-    "outputs/paper/assay_transfer_harness/joseph/reranked_progressive_l1_simple_v33_bbb_oral_assay_transfer_morgan_no_query_prior_valid_dgx015_dgx018_64each_20260912",
+    "outputs/paper/assay_transfer_harness/joseph/reranked_progressive_l1_simple_v34_bbb_oral_assay_transfer_morgan_no_query_prior_valid_dgx015_dgx018_64each_20260912",
     "--tasks",
     "bbb_martins",
     "bioavailability_ma",
@@ -47,7 +47,7 @@
     "throughput",
     "--publish-review-traces",
     "--prompt-version",
-    "reranked_progressive_l1_simple_v33",
+    "reranked_progressive_l1_simple_v34",
     "--query-prior-modes",
     "none",
     "--prior-root",
@@ -63,13 +63,13 @@
   ],
   "execution_mode": "throughput",
   "visibility": "public",
-  "promoted_at": "2026-09-12T07:46:13-04:00",
+  "promoted_at": "2026-09-12T08:04:37-04:00",
   "resume_command": [
     "[local path omitted]",
     "-m",
     "tools.chembl_tool.paper_experiments.run_progressive_matrix",
     "--output-root",
-    "outputs/paper/assay_transfer_harness/joseph/reranked_progressive_l1_simple_v33_bbb_oral_assay_transfer_morgan_no_query_prior_valid_dgx015_dgx018_64each_20260912",
+    "outputs/paper/assay_transfer_harness/joseph/reranked_progressive_l1_simple_v34_bbb_oral_assay_transfer_morgan_no_query_prior_valid_dgx015_dgx018_64each_20260912",
     "--tasks",
     "bbb_martins",
     "bioavailability_ma",
@@ -94,7 +94,7 @@
     "throughput",
     "--publish-review-traces",
     "--prompt-version",
-    "reranked_progressive_l1_simple_v33",
+    "reranked_progressive_l1_simple_v34",
     "--query-prior-modes",
     "none",
     "--prior-root",
@@ -108,18 +108,8 @@
     "--assay-transfer-cache",
     "predict/retrieval/assay_reranking/cache_matched_retrieval_v3.yaml",
     "--live-run-id",
-    "2026-09-12_07-46"
+    "2026-09-12_08-04"
   ],
-  "path": "bioavailability_ma/progressive_assay-transfer_assay-transfer-trained_records50_no_query_prior/2026-09-12_07-46",
-  "samples": {
-    "query_idx00000": [
-      "level_01"
-    ],
-    "query_idx00001": [
-      "level_01"
-    ],
-    "query_idx00002": [
-      "level_01"
-    ]
-  }
+  "path": "bioavailability_ma/progressive_morgan_assay-transfer-trained_records50_no_query_prior/2026-09-12_08-04",
+  "samples": {}
 }
