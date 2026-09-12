@@ -5,7 +5,7 @@
   "run_id": "2026-09-10_17-36",
   "status": "complete",
   "created_at": "2026-09-10T17:36:20-04:00",
-  "updated_at": "2026-09-11T11:19:37-04:00",
+  "updated_at": "2026-09-12T12:20:50-04:00",
   "finished_at": "2026-09-10T23:18:37.191318+00:00",
   "visibility": "public",
   "execution_mode": "derived_review",
@@ -13,7 +13,7 @@
   "harness_version": "reranked-progressive-v2",
   "prompt_version": "reranked_progressive_l1_simple_v12_no_query_prior",
   "source_run": "bioavailability_ma/progressive_morgan_assay-transfer-trained_records50_no_query_prior/2026-09-10_17-36",
-  "classification_sha256": "19d14042f9bd0a4637b33fe0974a750ffdd357206510ec0c7df6763ff0ace9de",
+  "classification_sha256": "28ce5d48827f4bed99e7397f9e5cfd851258e3d729c982950ca2aae97e1cc6d9",
   "sample_count": 48,
   "path": "Bioavailability_correct_flips/Morgan/2026-09-10_17-36",
   "samples": {
@@ -176,7 +176,7 @@
     ],
     "source": {
       "classification_schema": "correct_flip_reasoning_classification.v2",
-      "classification_sha256": "19d14042f9bd0a4637b33fe0974a750ffdd357206510ec0c7df6763ff0ace9de",
+      "classification_sha256": "28ce5d48827f4bed99e7397f9e5cfd851258e3d729c982950ca2aae97e1cc6d9",
       "source_run": "bioavailability_ma/progressive_morgan_assay-transfer-trained_records50_no_query_prior/2026-09-10_17-36",
       "source_run_sha256": "db7d014af504a48fe4d82978add2926441ec015201a4546d8c486dd149a86d6f",
       "inference_rerun": false,
@@ -379,7 +379,8 @@
         "reasoning_tags": [
           "scaffold_family",
           "functional_group_analysis",
-          "physicochemical_properties"
+          "physicochemical_properties",
+          "evidence_depth_weighting"
         ],
         "identity_recognition": "exact_or_near_exact_drug",
         "external_knowledge_role": "none",
