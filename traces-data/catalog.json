@@ -215,9 +215,9 @@
       "dataset": "bbb_martins",
       "method": "progressive_assay-transfer_assay-transfer-trained_records50_no_query_prior",
       "run_id": "2026-09-12_03-00",
-      "status": "running",
+      "status": "prepared",
       "created_at": "2026-09-12T03:00:03-04:00",
-      "updated_at": "2026-09-12T03:00:04-04:00",
+      "updated_at": "2026-09-12T03:00:36-04:00",
       "pilot_size": 3,
       "path": "bbb_martins/progressive_assay-transfer_assay-transfer-trained_records50_no_query_prior/2026-09-12_03-00"
     },
@@ -440,6 +440,16 @@
       "updated_at": "2026-09-12T02:46:47-04:00",
       "pilot_size": 3,
       "path": "bbb_martins/progressive_morgan_assay-transfer-trained_records50_no_query_prior/2026-09-12_02-46"
+    },
+    {
+      "dataset": "bbb_martins",
+      "method": "progressive_morgan_assay-transfer-trained_records50_no_query_prior",
+      "run_id": "2026-09-12_03-00",
+      "status": "running",
+      "created_at": "2026-09-12T03:00:37-04:00",
+      "updated_at": "2026-09-12T03:00:38-04:00",
+      "pilot_size": 3,
+      "path": "bbb_martins/progressive_morgan_assay-transfer-trained_records50_no_query_prior/2026-09-12_03-00"
     },
     {
       "dataset": "bbb_martins",
@@ -715,9 +725,9 @@
       "dataset": "bioavailability_ma",
       "method": "progressive_assay-transfer_assay-transfer-trained_records50_no_query_prior",
       "run_id": "2026-09-12_03-00",
-      "status": "running",
+      "status": "prepared",
       "created_at": "2026-09-12T03:00:04-04:00",
-      "updated_at": "2026-09-12T03:00:05-04:00",
+      "updated_at": "2026-09-12T03:00:37-04:00",
       "pilot_size": 3,
       "path": "bioavailability_ma/progressive_assay-transfer_assay-transfer-trained_records50_no_query_prior/2026-09-12_03-00"
     },
@@ -930,6 +940,16 @@
       "updated_at": "2026-09-12T02:46:48-04:00",
       "pilot_size": 3,
       "path": "bioavailability_ma/progressive_morgan_assay-transfer-trained_records50_no_query_prior/2026-09-12_02-46"
+    },
+    {
+      "dataset": "bioavailability_ma",
+      "method": "progressive_morgan_assay-transfer-trained_records50_no_query_prior",
+      "run_id": "2026-09-12_03-00",
+      "status": "running",
+      "created_at": "2026-09-12T03:00:38-04:00",
+      "updated_at": "2026-09-12T03:00:39-04:00",
+      "pilot_size": 3,
+      "path": "bioavailability_ma/progressive_morgan_assay-transfer-trained_records50_no_query_prior/2026-09-12_03-00"
     },
     {
       "dataset": "bioavailability_ma",
