@@ -113,5 +113,12 @@
     "2026-09-12_01-24"
   ],
   "path": "bbb_martins/progressive_assay-transfer_assay-transfer-trained_records50_query_prior/2026-09-12_01-24",
-  "samples": {}
+  "samples": {
+    "query_idx00003": [
+      "level_01"
+    ],
+    "query_idx00010": [
+      "level_01"
+    ]
+  }
 }
