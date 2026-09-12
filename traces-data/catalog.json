@@ -1587,7 +1587,7 @@
       "run_id": "2026-09-12_07-47",
       "status": "running",
       "created_at": "2026-09-12T07:47:16-04:00",
-      "updated_at": "2026-09-12T07:47:16-04:00",
+      "updated_at": "2026-09-12T07:47:17-04:00",
       "pilot_size": 3,
       "path": "bioavailability_ma/progressive_morgan_assay-transfer-trained_records50_no_query_prior/2026-09-12_07-47"
     },
