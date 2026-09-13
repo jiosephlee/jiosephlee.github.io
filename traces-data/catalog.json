@@ -53,6 +53,16 @@
     },
     {
       "dataset": "bbb_martins",
+      "method": "progressive_assay-transfer-contrastive_assay-transfer-trained_records50_m1_query_prior",
+      "run_id": "2026-09-13_02-42",
+      "status": "prepared",
+      "created_at": "2026-09-13T02:42:56-04:00",
+      "updated_at": "2026-09-13T02:43:27-04:00",
+      "pilot_size": 3,
+      "path": "bbb_martins/progressive_assay-transfer-contrastive_assay-transfer-trained_records50_m1_query_prior/2026-09-13_02-42"
+    },
+    {
+      "dataset": "bbb_martins",
       "method": "progressive_assay-transfer-contrastive_assay-transfer-trained_records50_m2_query_prior",
       "run_id": "2026-09-13_02-17",
       "status": "prepared",
@@ -105,9 +115,9 @@
       "dataset": "bbb_martins",
       "method": "progressive_assay-transfer-contrastive_assay-transfer-trained_records50_m3_query_prior",
       "run_id": "2026-09-13_02-22",
-      "status": "prepared",
+      "status": "complete",
       "created_at": "2026-09-13T02:22:49-04:00",
-      "updated_at": "2026-09-13T02:23:16-04:00",
+      "updated_at": "2026-09-13T02:42:48-04:00",
       "pilot_size": 3,
       "path": "bbb_martins/progressive_assay-transfer-contrastive_assay-transfer-trained_records50_m3_query_prior/2026-09-13_02-22"
     },
@@ -1220,6 +1230,16 @@
       "updated_at": "2026-09-13T02:42:47-04:00",
       "pilot_size": 3,
       "path": "bioavailability_ma/progressive_assay-transfer-contrastive_assay-transfer-trained_records50_m1_query_prior/2026-09-13_02-21"
+    },
+    {
+      "dataset": "bioavailability_ma",
+      "method": "progressive_assay-transfer-contrastive_assay-transfer-trained_records50_m1_query_prior",
+      "run_id": "2026-09-13_02-42",
+      "status": "prepared",
+      "created_at": "2026-09-13T02:42:58-04:00",
+      "updated_at": "2026-09-13T02:43:27-04:00",
+      "pilot_size": 3,
+      "path": "bioavailability_ma/progressive_assay-transfer-contrastive_assay-transfer-trained_records50_m1_query_prior/2026-09-13_02-42"
     },
     {
       "dataset": "bioavailability_ma",
