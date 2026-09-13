@@ -118,5 +118,15 @@
     "2026-09-13_02-21"
   ],
   "path": "bioavailability_ma/progressive_assay-transfer-contrastive_assay-transfer-trained_records50_m1_query_prior/2026-09-13_02-21",
-  "samples": {}
+  "samples": {
+    "query_idx00032": [
+      "level_01"
+    ],
+    "query_idx00041": [
+      "level_01"
+    ],
+    "query_idx00083": [
+      "level_01"
+    ]
+  }
 }
