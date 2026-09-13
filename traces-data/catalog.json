@@ -505,9 +505,9 @@
       "dataset": "bbb_martins",
       "method": "progressive_assay-transfer_assay-transfer-trained_records50_no_query_prior",
       "run_id": "2026-09-13_00-21",
-      "status": "prepared",
+      "status": "complete",
       "created_at": "2026-09-13T00:21:42-04:00",
-      "updated_at": "2026-09-13T00:22:18-04:00",
+      "updated_at": "2026-09-13T01:22:49-04:00",
       "pilot_size": 3,
       "path": "bbb_martins/progressive_assay-transfer_assay-transfer-trained_records50_no_query_prior/2026-09-13_00-21"
     },
@@ -1625,9 +1625,9 @@
       "dataset": "bioavailability_ma",
       "method": "progressive_assay-transfer_assay-transfer-trained_records50_no_query_prior",
       "run_id": "2026-09-13_00-21",
-      "status": "prepared",
+      "status": "complete",
       "created_at": "2026-09-13T00:21:44-04:00",
-      "updated_at": "2026-09-13T00:22:19-04:00",
+      "updated_at": "2026-09-13T01:22:50-04:00",
       "pilot_size": 3,
       "path": "bioavailability_ma/progressive_assay-transfer_assay-transfer-trained_records50_no_query_prior/2026-09-13_00-21"
     },
