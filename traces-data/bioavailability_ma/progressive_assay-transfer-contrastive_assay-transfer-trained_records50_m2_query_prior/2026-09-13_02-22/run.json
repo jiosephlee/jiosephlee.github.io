@@ -5,16 +5,16 @@
   "retrieval_cache_bundle": "[local path omitted]",
   "evaluation_subset": "valid",
   "l1_molecules": 10,
-  "l1_min_contrast": 1,
+  "l1_min_contrast": 2,
   "pilot_size": 3,
   "matrix_output_root": "[local path omitted]",
   "schema_version": "predict_live_run.v1",
-  "dataset": "bbb_martins",
-  "method": "progressive_assay-transfer-contrastive_assay-transfer-trained_records50_m1_query_prior",
-  "run_id": "2026-09-13_02-21",
+  "dataset": "bioavailability_ma",
+  "method": "progressive_assay-transfer-contrastive_assay-transfer-trained_records50_m2_query_prior",
+  "run_id": "2026-09-13_02-22",
   "status": "prepared",
-  "created_at": "2026-09-13T02:21:49-04:00",
-  "updated_at": "2026-09-13T02:22:18-04:00",
+  "created_at": "2026-09-13T02:22:22-04:00",
+  "updated_at": "2026-09-13T02:22:48-04:00",
   "pid": 1013345,
   "process_group": 1013345,
   "process_started_at": "41553066",
@@ -67,7 +67,7 @@
   ],
   "execution_mode": "throughput",
   "visibility": "public",
-  "promoted_at": "2026-09-13T02:21:50-04:00",
+  "promoted_at": "2026-09-13T02:22:22-04:00",
   "resume_command": [
     "[local path omitted]",
     "-m",
@@ -115,8 +115,8 @@
     "--assay-transfer-cache",
     "predict/retrieval/assay_reranking/l1_context_morgan25_v1.yaml",
     "--live-run-id",
-    "2026-09-13_02-21"
+    "2026-09-13_02-22"
   ],
-  "path": "bbb_martins/progressive_assay-transfer-contrastive_assay-transfer-trained_records50_m1_query_prior/2026-09-13_02-21",
+  "path": "bioavailability_ma/progressive_assay-transfer-contrastive_assay-transfer-trained_records50_m2_query_prior/2026-09-13_02-22",
   "samples": {}
 }
