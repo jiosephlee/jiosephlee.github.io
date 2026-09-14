@@ -97,8 +97,12 @@
   ],
   "path": "bioavailability_ma/progressive_semantic-lap_all_records12_k10_query_prior/2026-09-13_21-33",
   "samples": {
-    "query_idx00001": [
+    "query_idx00000": [
       "level_01"
+    ],
+    "query_idx00001": [
+      "level_01",
+      "level_02"
     ],
     "query_idx00002": [
       "level_01"
