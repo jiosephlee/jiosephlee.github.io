@@ -118,7 +118,8 @@
   "path": "bbb_martins/progressive_morgan_all_records12_k10_query_prior/2026-09-14_00-19",
   "samples": {
     "query_idx00000": [
-      "level_01"
+      "level_01",
+      "level_02"
     ],
     "query_idx00001": [
       "level_01"
