@@ -45,11 +45,21 @@
       "dataset": "bbb_martins",
       "method": "progressive_assay-transfer-contrastive_assay-transfer-trained_records50_k10_m0_query_prior",
       "run_id": "2026-09-13_23-05",
-      "status": "running",
+      "status": "prepared",
       "created_at": "2026-09-13T23:05:19-04:00",
-      "updated_at": "2026-09-13T23:05:21-04:00",
+      "updated_at": "2026-09-13T23:06:00-04:00",
       "pilot_size": 3,
       "path": "bbb_martins/progressive_assay-transfer-contrastive_assay-transfer-trained_records50_k10_m0_query_prior/2026-09-13_23-05"
+    },
+    {
+      "dataset": "bbb_martins",
+      "method": "progressive_assay-transfer-contrastive_assay-transfer-trained_records50_k10_m1_query_prior",
+      "run_id": "2026-09-13_23-06",
+      "status": "running",
+      "created_at": "2026-09-13T23:06:02-04:00",
+      "updated_at": "2026-09-13T23:06:04-04:00",
+      "pilot_size": 3,
+      "path": "bbb_martins/progressive_assay-transfer-contrastive_assay-transfer-trained_records50_k10_m1_query_prior/2026-09-13_23-06"
     },
     {
       "dataset": "bbb_martins",
@@ -1475,11 +1485,21 @@
       "dataset": "bioavailability_ma",
       "method": "progressive_assay-transfer-contrastive_assay-transfer-trained_records50_k10_m0_query_prior",
       "run_id": "2026-09-13_23-05",
-      "status": "running",
+      "status": "prepared",
       "created_at": "2026-09-13T23:05:22-04:00",
-      "updated_at": "2026-09-13T23:05:22-04:00",
+      "updated_at": "2026-09-13T23:06:01-04:00",
       "pilot_size": 3,
       "path": "bioavailability_ma/progressive_assay-transfer-contrastive_assay-transfer-trained_records50_k10_m0_query_prior/2026-09-13_23-05"
+    },
+    {
+      "dataset": "bioavailability_ma",
+      "method": "progressive_assay-transfer-contrastive_assay-transfer-trained_records50_k10_m1_query_prior",
+      "run_id": "2026-09-13_23-06",
+      "status": "running",
+      "created_at": "2026-09-13T23:06:05-04:00",
+      "updated_at": "2026-09-13T23:06:06-04:00",
+      "pilot_size": 3,
+      "path": "bioavailability_ma/progressive_assay-transfer-contrastive_assay-transfer-trained_records50_k10_m1_query_prior/2026-09-13_23-06"
     },
     {
       "dataset": "bioavailability_ma",
