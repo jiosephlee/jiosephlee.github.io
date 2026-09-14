@@ -118,7 +118,8 @@
   "path": "bioavailability_ma/progressive_semantic-weighted_all_records12_k10_query_prior/2026-09-14_00-20",
   "samples": {
     "query_idx00000": [
-      "level_01"
+      "level_01",
+      "level_02"
     ],
     "query_idx00001": [
       "level_01",
