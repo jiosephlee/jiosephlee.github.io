@@ -94,10 +94,12 @@
       "level_02"
     ],
     "query_idx00001": [
-      "level_01"
+      "level_01",
+      "level_02"
     ],
     "query_idx00002": [
-      "level_01"
+      "level_01",
+      "level_02"
     ]
   }
 }
