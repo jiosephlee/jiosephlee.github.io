@@ -1375,9 +1375,9 @@
       "dataset": "bbb_martins",
       "method": "progressive_semantic-lap_all_records12_k10_query_prior",
       "run_id": "2026-09-13_21-39",
-      "status": "running",
+      "status": "prepared",
       "created_at": "2026-09-13T21:39:44-04:00",
-      "updated_at": "2026-09-13T21:39:45-04:00",
+      "updated_at": "2026-09-13T21:40:03-04:00",
       "pilot_size": 3,
       "path": "bbb_martins/progressive_semantic-lap_all_records12_k10_query_prior/2026-09-13_21-39"
     },
@@ -2775,9 +2775,9 @@
       "dataset": "bioavailability_ma",
       "method": "progressive_semantic-lap_all_records12_k10_query_prior",
       "run_id": "2026-09-13_21-39",
-      "status": "running",
+      "status": "prepared",
       "created_at": "2026-09-13T21:39:46-04:00",
-      "updated_at": "2026-09-13T21:39:48-04:00",
+      "updated_at": "2026-09-13T21:40:04-04:00",
       "pilot_size": 3,
       "path": "bioavailability_ma/progressive_semantic-lap_all_records12_k10_query_prior/2026-09-13_21-39"
     }
