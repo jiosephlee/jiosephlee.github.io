@@ -12,9 +12,9 @@
   "dataset": "bioavailability_ma",
   "method": "progressive_semantic-lap_all_records12_k10_query_prior",
   "run_id": "2026-09-13_21-33",
-  "status": "prepared",
+  "status": "awaiting_review",
   "created_at": "2026-09-13T21:33:54-04:00",
-  "updated_at": "2026-09-13T21:34:26-04:00",
+  "updated_at": "2026-09-13T21:38:09-04:00",
   "pid": 1507331,
   "process_group": 1507331,
   "process_started_at": "48461882",
@@ -95,6 +95,7 @@
     "--live-run-id",
     "2026-09-13_21-33"
   ],
+  "pilot_completed_at": "2026-09-14T01:38:09.973123+00:00",
   "path": "bioavailability_ma/progressive_semantic-lap_all_records12_k10_query_prior/2026-09-13_21-33",
   "samples": {
     "query_idx00000": [
@@ -106,7 +107,8 @@
       "level_02"
     ],
     "query_idx00002": [
-      "level_01"
+      "level_01",
+      "level_02"
     ]
   }
 }
