@@ -9,12 +9,12 @@
   "pilot_size": 3,
   "matrix_output_root": "[local path omitted]",
   "schema_version": "predict_live_run.v1",
-  "dataset": "bbb_martins",
-  "method": "progressive_morgan_all_records12_k10_query_prior",
+  "dataset": "bioavailability_ma",
+  "method": "progressive_semantic-lap_all_records12_k10_query_prior",
   "run_id": "2026-09-13_21-33",
   "status": "prepared",
-  "created_at": "2026-09-13T21:33:18-04:00",
-  "updated_at": "2026-09-13T21:33:50-04:00",
+  "created_at": "2026-09-13T21:33:54-04:00",
+  "updated_at": "2026-09-13T21:34:26-04:00",
   "pid": 1507331,
   "process_group": 1507331,
   "process_started_at": "48461882",
@@ -56,7 +56,7 @@
   ],
   "execution_mode": "live",
   "visibility": "public",
-  "promoted_at": "2026-09-13T21:33:19-04:00",
+  "promoted_at": "2026-09-13T21:33:55-04:00",
   "resume_command": [
     "[local path omitted]",
     "-m",
@@ -95,7 +95,7 @@
     "--live-run-id",
     "2026-09-13_21-33"
   ],
-  "path": "bbb_martins/progressive_morgan_all_records12_k10_query_prior/2026-09-13_21-33",
+  "path": "bioavailability_ma/progressive_semantic-lap_all_records12_k10_query_prior/2026-09-13_21-33",
   "samples": {
     "query_idx00002": [
       "level_01"
