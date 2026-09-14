@@ -116,5 +116,15 @@
     "2026-09-14_00-19"
   ],
   "path": "bioavailability_ma/progressive_morgan_all_records12_k10_query_prior/2026-09-14_00-19",
-  "samples": {}
+  "samples": {
+    "query_idx00006": [
+      "level_01"
+    ],
+    "query_idx00010": [
+      "level_01"
+    ],
+    "query_idx00024": [
+      "level_01"
+    ]
+  }
 }
